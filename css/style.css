@@ -211,6 +211,7 @@ You can also shorthand most properties for faster coding. Here are a couple I us
 
 /*components*/
 /*layout*/
+/*pages*/
 nav {
   z-index: 999;
   display: flex;
@@ -225,7 +226,6 @@ nav {
       animation: ease-in;
       transition-delay: 0.1s; }
 
-/*pages*/
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors

@@ -1,0 +1,24 @@
+//NAV 
+nav{  
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    background-color: $primary-green;
+    margin-bottom: 10rem; 
+    padding: 0.5rem 0;
+    ul{
+     li{
+         margin: 0 1rem;
+         padding: 0 1.2rem;
+         a{
+             &:hover{
+                 animation: ease-in;
+                 transition-delay: 0.1s;                  
+             }
+         }
+     }
+    }
+  }
+  //NAV ENDS
+
+  
