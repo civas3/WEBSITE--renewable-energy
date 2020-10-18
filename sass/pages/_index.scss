@@ -117,3 +117,17 @@ nav{
     } 
 }
 //section-two ENDS
+
+//section-three
+.sectionThree{
+    @include sectionMargin; 
+    .bg-primary{
+        background-color: $white !important;
+}
+    .card-body{
+        overflow-x: hidden;
+        border: none;
+        padding: 0;
+    }
+}
+//section-three ENDS

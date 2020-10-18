@@ -314,6 +314,15 @@ nav {
 .sectionTwo .image-banner {
   background-image: url(../images/sectionTwo/clearcut-forest.jpg); }
 
+.sectionThree {
+  margin: 20rem 0; }
+  .sectionThree .bg-primary {
+    background-color: #ffffff !important; }
+  .sectionThree .card-body {
+    overflow-x: hidden;
+    border: none;
+    padding: 0; }
+
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
