@@ -90,42 +90,43 @@ ORDER: Base + typography > general layout + grid > page layout > components
   0% {
     opacity: 0; }
   100% {
-    opacity: 1;
-    background-color: white; } }
+    opacity: 0.2;
+    background-color: #417B5A; } }
 
 @keyframes arrowDown-itemTwo {
   0% {
     opacity: 0; }
   100% {
-    opacity: 1;
-    background-color: #7fecfd; } }
+    opacity: 0.3;
+    background-color: #417B5A; } }
 
 @keyframes arrowDown-itemThree {
   0% {
     opacity: 0; }
   100% {
-    opacity: 1;
-    background-color: #5accdd; } }
+    opacity: 0.4;
+    background-color: #417B5A; } }
 
 @keyframes arrowDown-itemFour {
   0% {
     opacity: 0; }
   100% {
-    opacity: 1;
-    background-color: #3db0c2; } }
+    opacity: 0.5;
+    background-color: #417B5A; } }
 
 @keyframes arrowDown-itemFive {
   0% {
     opacity: 0; }
   100% {
-    opacity: 1;
-    border-top: 5rem solid #17a3b8; } }
+    opacity: 0.8;
+    border-top: 5rem solid #417B5A; } }
 
 @keyframes heroButton {
   0% {
     opacity: 0; }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    background-color: #417B5A; } }
 
 *,
 *::after,
@@ -176,6 +177,12 @@ nav ul li a {
   nav ul li a:hover {
     color: #E9D2C0; }
 
+.hero-section .carousel-item:nth-child(5) a {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: black 0.2rem 0.2rem;
+  color: #E9D2C0; }
+
 /*Utility classes are meant to do only one thing, and do it well. They are designed to be simple,
  composable and re-usable, allowing for easy and fast development. While a CSS system based on utility 
  classes alone is not desirable, having a set of utility classes that allow you to quickly put together 
@@ -225,6 +232,63 @@ nav {
     nav ul li a:hover {
       animation: ease-in;
       transition-delay: 0.1s; }
+
+.hero-section .carousel-item:nth-child(5) .arrow-down {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  animation-name: arrow;
+  animation-duration: 2s;
+  animation-delay: 4s; }
+  .hero-section .carousel-item:nth-child(5) .arrow-down div {
+    width: 2rem;
+    height: 5rem;
+    border: red solid 0.1rem;
+    margin: 1rem auto;
+    transition-property: opacity, background;
+    animation-fill-mode: forwards;
+    animation-duration: 1.3s;
+    opacity: 0; }
+    .hero-section .carousel-item:nth-child(5) .arrow-down div:first-child {
+      animation-delay: 1s;
+      animation-name: arrowDown-itemOne; }
+    .hero-section .carousel-item:nth-child(5) .arrow-down div:nth-child(2) {
+      animation-delay: 1.3s;
+      animation-name: arrowDown-itemTwo; }
+    .hero-section .carousel-item:nth-child(5) .arrow-down div:nth-child(3) {
+      animation-delay: 1.6s;
+      animation-name: arrowDown-itemThree; }
+    .hero-section .carousel-item:nth-child(5) .arrow-down div:nth-child(4) {
+      animation-delay: 1.9s;
+      animation-name: arrowDown-itemFour; }
+    .hero-section .carousel-item:nth-child(5) .arrow-down div:nth-child(5) {
+      width: 0;
+      height: 0;
+      border: none;
+      border-left: 2.5rem solid transparent;
+      border-right: 2.5rem solid transparent;
+      animation-delay: 2.2s;
+      animation-name: arrowDown-itemFive; }
+
+.hero-section .carousel-item:nth-child(5) a {
+  display: inline-block;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 2rem;
+  border-radius: 3rem !important;
+  border: red solid 0.1rem;
+  opacity: 0;
+  animation-name: heroButton;
+  animation-delay: 2.8s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 2s; }
+  .hero-section .carousel-item:nth-child(5) a:hover {
+    transform: translate(-50%, -50%) rotateY(180deg); }
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)

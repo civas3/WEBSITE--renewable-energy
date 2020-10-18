@@ -19,6 +19,81 @@ nav{
      }
     }
   }
-  //NAV ENDS
+//NAV ENDS
 
-  
+//hero-section
+.hero-section{
+    .carousel-item{
+            &:nth-child(5){
+                .arrow-down{
+                    position: absolute;
+                    left: 50%;
+                    top: 40%;
+                    transform: translate(-50%, -40%);
+                    text-align: center;   
+                    animation-name: arrow;
+                    animation-duration: 2s;
+                    animation-delay: 4s;                  
+                    div{
+                        width: 2rem;
+                        height: 5rem;
+                        border: red solid 0.1rem;
+                        margin: 1rem auto;
+                        transition-property: opacity, background;
+                        animation-fill-mode: forwards;
+                        animation-duration: 1.3s;
+                        opacity: 0;
+                        &:first-child{
+                        animation-delay: 1s;
+                        animation-name: arrowDown-itemOne;                     
+                        }
+                        &:nth-child(2){
+                        animation-delay: 1.3s;
+                        animation-name: arrowDown-itemTwo;
+                        }
+                        &:nth-child(3){
+                        animation-delay: 1.6s;
+                        animation-name: arrowDown-itemThree;
+
+                        }
+                        &:nth-child(4){                   
+                        animation-delay: 1.9s;
+                        animation-name: arrowDown-itemFour;
+                        }       
+                        &:nth-child(5){
+                            width: 0; 
+                            height: 0; 
+                            border: none;
+                            border-left: 2.5rem solid transparent;
+                            border-right: 2.5rem solid transparent;  
+                            animation-delay: 2.2s; 
+                            animation-name: arrowDown-itemFive; 
+                        }
+
+                    }
+                }
+                a{
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 15%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    padding: 1rem 2rem;
+                    border-radius: 3rem !important;
+                    border: red solid 0.1rem;
+                    opacity: 0;
+                    animation-name: heroButton;
+                    animation-delay: 2.8s;
+                    animation-fill-mode: forwards;
+                    transition-property: transform;
+                    transition-duration: 2s;
+                    &:hover{ 
+                        transform: translate(-50%, -50%) rotateY(180deg)  ;
+                    }
+                }
+            }
+    }
+}
+//hero-section ENDS
+
+

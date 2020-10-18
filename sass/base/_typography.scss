@@ -38,3 +38,18 @@ nav{
     }
   }
 //NAV ENDS
+
+//hero-section
+.hero-section{
+    .carousel-item{
+            &:nth-child(5){
+                a{
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    text-shadow: black 0.2rem 0.2rem;
+                    color: $primary-pink;
+                }
+            }
+    }
+}
+//hero-section END

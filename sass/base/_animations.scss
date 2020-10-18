@@ -31,32 +31,32 @@
 
   @keyframes arrowDown-itemOne{
     0%{opacity: 0;}
-    100%{opacity: 1; background-color: white; }
+    100%{opacity: 0.2; background-color: $primary-green; }
   }
 
   @keyframes arrowDown-itemTwo{
     0%{opacity: 0; }
-    100%{opacity: 1; background-color: #7fecfd;}
+    100%{opacity: 0.3; background-color: $primary-green;}
   }
 
   @keyframes arrowDown-itemThree{
     0%{opacity: 0;}
-    100%{opacity: 1; background-color: #5accdd;}
+    100%{opacity: 0.4; background-color: $primary-green;}
   }
 
   @keyframes arrowDown-itemFour{
     0%{opacity: 0;}
-    100%{opacity: 1; background-color: #3db0c2; }
+    100%{opacity: 0.5; background-color: $primary-green; }
   }
 
   @keyframes arrowDown-itemFive{
     0%{opacity: 0;}
-    100%{opacity: 1; border-top: 5rem solid #17a3b8; }
+    100%{opacity: 0.8; border-top: 5rem solid $primary-green; }
   }
 
   @keyframes heroButton{
     0%{opacity: 0;}
-    100%{opacity: 1;  }
+    100%{opacity: 1; background-color: $primary-green;  }
   }
 
   
