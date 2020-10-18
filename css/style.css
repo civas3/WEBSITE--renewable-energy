@@ -183,6 +183,11 @@ nav ul li a {
   text-shadow: black 0.2rem 0.2rem;
   color: #E9D2C0; }
 
+.sectionOne .container .row {
+  word-spacing: 0.5rem; }
+  .sectionOne .container .row span {
+    font-size: 130%; }
+
 /*Utility classes are meant to do only one thing, and do it well. They are designed to be simple,
  composable and re-usable, allowing for easy and fast development. While a CSS system based on utility 
  classes alone is not desirable, having a set of utility classes that allow you to quickly put together 
@@ -297,10 +302,7 @@ nav {
     margin-top: 15rem; }
     .sectionOne .container .row {
       display: flex;
-      align-items: center;
-      word-spacing: 0.5rem; }
-      .sectionOne .container .row span {
-        font-size: 130%; }
+      align-items: center; }
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
