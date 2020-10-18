@@ -35,3 +35,12 @@ You can also shorthand most properties for faster coding. Here are a couple I us
     color: $black !important;
     text-shadow: $white 0.1rem 0.1rem;
 }  
+
+//image-banner
+.image-banner{
+    height: 40vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;     
+}

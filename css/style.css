@@ -221,6 +221,13 @@ You can also shorthand most properties for faster coding. Here are a couple I us
   color: #000 !important;
   text-shadow: #ffffff 0.1rem 0.1rem; }
 
+.image-banner {
+  height: 40vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
 /*components*/
 /*layout*/
 /*pages*/
@@ -303,6 +310,9 @@ nav {
     .sectionOne .container .row {
       display: flex;
       align-items: center; }
+
+.sectionTwo .image-banner {
+  background-image: url(../images/sectionTwo/clearcut-forest.jpg); }
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
