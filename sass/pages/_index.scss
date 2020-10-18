@@ -96,4 +96,20 @@ nav{
 }
 //hero-section ENDS
 
-
+//section-one
+.sectionOne{
+    @include sectionMargin;
+    overflow-x: hidden;
+    .container{
+       margin-top: 15rem;
+          .row{
+        display: flex;
+        align-items: center;
+        word-spacing: 0.5rem;
+        span{
+            font-size: 130%;
+        }      
+    }  
+    }  
+}
+//section-one ENDS

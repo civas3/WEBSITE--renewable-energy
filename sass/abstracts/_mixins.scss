@@ -42,3 +42,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
+@mixin sectionMargin {
+    margin: 20rem 0; 
+}
+

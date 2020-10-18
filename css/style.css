@@ -290,6 +290,18 @@ nav {
   .hero-section .carousel-item:nth-child(5) a:hover {
     transform: translate(-50%, -50%) rotateY(180deg); }
 
+.sectionOne {
+  margin: 20rem 0;
+  overflow-x: hidden; }
+  .sectionOne .container {
+    margin-top: 15rem; }
+    .sectionOne .container .row {
+      display: flex;
+      align-items: center;
+      word-spacing: 0.5rem; }
+      .sectionOne .container .row span {
+        font-size: 130%; }
+
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
