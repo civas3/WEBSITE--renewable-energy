@@ -323,6 +323,9 @@ nav {
     border: none;
     padding: 0; }
 
+.sectionFour .image-banner {
+  background-image: url(../images/sectionFour/chopped-forest.jpg); }
+
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
