@@ -167,6 +167,15 @@ p {
   font-size: 2rem;
   font-weight: 400; }
 
+nav ul li a {
+  color: #ffffff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: #000 0.1rem 0.1rem; }
+  nav ul li a:hover {
+    color: #E9D2C0; }
+
 /*Utility classes are meant to do only one thing, and do it well. They are designed to be simple,
  composable and re-usable, allowing for easy and fast development. While a CSS system based on utility 
  classes alone is not desirable, having a set of utility classes that allow you to quickly put together 
@@ -190,8 +199,32 @@ You can also shorthand most properties for faster coding. Here are a couple I us
 *v/h for vertical/horizontal
 *bg for background
 */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.active {
+  background-color: #D0CEBA !important;
+  color: #000 !important;
+  text-shadow: #ffffff 0.1rem 0.1rem; }
+
 /*components*/
 /*layout*/
+nav {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  background-color: #417B5A;
+  margin-bottom: 10rem;
+  padding: 0.5rem 0; }
+  nav ul li {
+    margin: 0 1rem;
+    padding: 0 1.2rem; }
+    nav ul li a:hover {
+      animation: ease-in;
+      transition-delay: 0.1s; }
+
 /*pages*/
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)

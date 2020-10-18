@@ -21,3 +21,17 @@ You can also shorthand most properties for faster coding. Here are a couple I us
 *v/h for vertical/horizontal
 *bg for background
 */
+
+//on-scroll-fixed
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+//NAV
+.active{
+    background-color: $primary-gray !important;
+    color: $black !important;
+    text-shadow: $white 0.1rem 0.1rem;
+}  
