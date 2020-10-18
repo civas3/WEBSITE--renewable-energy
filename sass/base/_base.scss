@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style-type: none;
+}
+
+
+html {
+  //*62.5% is equal to 10px = 1rem
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  @include respond(s-phone) {
+    //320px
+    //*37.5% is equal to 6px = 1rem
+    font-size: 37.5%;
+  }
+
+  @include respond(tab-land) {
+    //1024px
+    //*56.25% is equal to 9px = 1rem
+    font-size: 56.25%;
+  }
+
+  @include respond(big-desktop) {
+    //1800px+
+    //*75.00% is equal to 12px = 1rem
+    font-size: 75%;
+  }
+
+  body {
+    //includes the padding and border in an element's total width and height
+    box-sizing: border-box;
+
+
+  }
+}

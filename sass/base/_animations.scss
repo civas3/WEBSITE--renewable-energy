@@ -1,0 +1,66 @@
+
+/*div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: myfirst 5s linear 2s infinite alternate;
+  }
+  */
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+
+
+
+
+  // hero-section slide-5
+  @keyframes arrow{
+    0%{ top: 40%; }
+    25%{ top: 42.5%;}
+    50%{ top: 40%;}
+    75%{  top: 42.5%;}
+    100%{ top: 40%; }
+  }
+
+  @keyframes arrowDown-itemOne{
+    0%{opacity: 0;}
+    100%{opacity: 1; background-color: white; }
+  }
+
+  @keyframes arrowDown-itemTwo{
+    0%{opacity: 0; }
+    100%{opacity: 1; background-color: #7fecfd;}
+  }
+
+  @keyframes arrowDown-itemThree{
+    0%{opacity: 0;}
+    100%{opacity: 1; background-color: #5accdd;}
+  }
+
+  @keyframes arrowDown-itemFour{
+    0%{opacity: 0;}
+    100%{opacity: 1; background-color: #3db0c2; }
+  }
+
+  @keyframes arrowDown-itemFive{
+    0%{opacity: 0;}
+    100%{opacity: 1; border-top: 5rem solid #17a3b8; }
+  }
+
+  @keyframes heroButton{
+    0%{opacity: 0;}
+    100%{opacity: 1;  }
+  }
+
+  
+
+  //
+
+  

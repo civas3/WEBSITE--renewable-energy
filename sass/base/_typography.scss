@@ -1,0 +1,22 @@
+/*“Web typography” refers to the appearance of all the text on your website. It includes basic 
+CSS text properties like what font to use and whether it should be italic or not, but typography 
+is much more than that. It’s about the space between and around letters, words, and lines. It’s 
+the size of different runs of text in relation to one another, and the history behind each font family.
+
+https://www.internetingishard.com/html-and-css/web-typography/
+*/
+
+/* !!!!___ Use % rather than px for all layout-related lenghts (including pictures) ___!!!! */
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'IM Fell English', serif;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    
+}
+
