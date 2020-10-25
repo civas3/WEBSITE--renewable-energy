@@ -128,6 +128,21 @@ ORDER: Base + typography > general layout + grid > page layout > components
     opacity: 1;
     background-color: #417B5A; } }
 
+.sectionOne .come-in {
+  transform: translateY(150px);
+  animation: come-in 1s ease forwards; }
+
+.sectionOne .come-in:nth-child(odd) {
+  animation-duration: 0.8s; }
+
+.sectionOne .already-visible {
+  transform: translateY(0);
+  animation: none; }
+
+@keyframes come-in {
+  to {
+    transform: translateY(0); } }
+
 *,
 *::after,
 *::before {
@@ -364,8 +379,7 @@ nav {
     transform: translate(-50%, -50%) rotateY(180deg); }
 
 .sectionOne {
-  margin: 20rem 0;
-  overflow-x: hidden; }
+  margin: 20rem 0; }
   .sectionOne .container {
     margin-top: 15rem; }
     .sectionOne .container .row {

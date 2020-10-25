@@ -100,7 +100,6 @@ nav{
 //section-one
 .sectionOne{
     @include sectionMargin;
-    overflow-x: hidden;
     .container{
        margin-top: 15rem;
           .row{
