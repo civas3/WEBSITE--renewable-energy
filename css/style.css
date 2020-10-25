@@ -407,6 +407,9 @@ nav {
         outline: none;
         box-shadow: none; }
 
+.sectionEight .image-banner {
+  background-image: url(../images/sectionEight/pray.jpg); }
+
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
