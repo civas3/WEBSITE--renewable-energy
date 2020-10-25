@@ -139,3 +139,41 @@ nav{
     } 
 }
 //section-four ENDS
+
+//section-five
+.sectionFive{
+    @include sectionMargin; 
+    h1{
+        margin: 3rem auto 3rem auto;
+    }  
+    .analogy{
+         span{
+            display: inline-block;
+        }
+        margin: 5rem auto 2rem auto; 
+    
+    }
+
+    .lead{
+          button{
+        margin-top: 3rem;
+        border-radius: 0.5rem;
+        background-color: $primary-green;
+        border: $primary-purple;
+        padding: 0.5rem 2rem;
+        
+        &:hover{
+            background-color: $primary-gray;
+        }
+    }
+    }
+    .modal-content{
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+//section-five ENDS
+

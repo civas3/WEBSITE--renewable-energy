@@ -66,3 +66,37 @@ nav{
     }  
 }
 //section-one ENDS
+
+//section-five
+.sectionFive{
+    @include sectionMargin; 
+    h1{
+        text-align: center;
+    }
+    span{
+        font-size: 250%;
+        font-weight: bold;
+    }
+  
+    .analogy{
+         span{
+            font-size: 210%;
+        }    
+    }
+
+    .lead{
+        text-align: center;
+          button{
+        font-size: 180%;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: $black 0.1rem 0.1rem;    
+        &:hover{
+            color: black;
+            text-shadow: $white 0.1rem 0.1rem;
+        }
+    }
+    }
+
+}
+//section-five ENDS

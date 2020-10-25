@@ -188,6 +188,26 @@ nav ul li a {
   .sectionOne .container .row span {
     font-size: 130%; }
 
+.sectionFive {
+  margin: 20rem 0; }
+  .sectionFive h1 {
+    text-align: center; }
+  .sectionFive span {
+    font-size: 250%;
+    font-weight: bold; }
+  .sectionFive .analogy span {
+    font-size: 210%; }
+  .sectionFive .lead {
+    text-align: center; }
+    .sectionFive .lead button {
+      font-size: 180%;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow: #000 0.1rem 0.1rem; }
+      .sectionFive .lead button:hover {
+        color: black;
+        text-shadow: #ffffff 0.1rem 0.1rem; }
+
 /*Utility classes are meant to do only one thing, and do it well. They are designed to be simple,
  composable and re-usable, allowing for easy and fast development. While a CSS system based on utility 
  classes alone is not desirable, having a set of utility classes that allow you to quickly put together 
@@ -325,6 +345,28 @@ nav {
 
 .sectionFour .image-banner {
   background-image: url(../images/sectionFour/chopped-forest.jpg); }
+
+.sectionFive {
+  margin: 20rem 0; }
+  .sectionFive h1 {
+    margin: 3rem auto 3rem auto; }
+  .sectionFive .analogy {
+    margin: 5rem auto 2rem auto; }
+    .sectionFive .analogy span {
+      display: inline-block; }
+  .sectionFive .lead button {
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    background-color: #417B5A;
+    border: #4B3F72;
+    padding: 0.5rem 2rem; }
+    .sectionFive .lead button:hover {
+      background-color: #D0CEBA; }
+  .sectionFive .modal-content {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center; }
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
