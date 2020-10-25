@@ -17,6 +17,7 @@ p{
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     font-weight: 400;  
+    
 }
 
 
@@ -100,3 +101,35 @@ nav{
 
 }
 //section-five ENDS
+
+//section-seven
+.sectionSeven{
+    h2{
+        text-align: center;
+    }  
+    span{
+        font-size: 150%;
+        font-weight: bold;
+    }
+    .card-text{
+        text-align: center;
+    }
+
+    #accordionExample{
+        .card-header{
+               button{
+            h3{
+                color: $white !important;
+                text-shadow: black 0.1rem 0.1rem;
+                font-size: 200%;
+                letter-spacing: 0.1rem;
+                word-spacing: 0.5rem;
+                text-align: left;
+                
+            }
+        }  
+        }    
+           
+    }
+}
+//section-seven ENDS

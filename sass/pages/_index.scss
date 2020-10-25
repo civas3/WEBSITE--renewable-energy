@@ -185,3 +185,39 @@ nav{
 }
 //section-six ENDS
 
+
+//section-seven
+.sectionSeven{
+    @include sectionMargin; 
+    h2{
+        margin: 3rem auto 3rem auto;
+    }  
+
+    iframe{
+        margin: 3rem auto 3rem auto;
+    }
+    p{
+        margin: 3rem auto 3rem auto; 
+    }
+
+    #accordionExample{
+       margin-top: 5rem;
+
+        iframe{
+            float: right;      
+            }
+        .card-header{
+            background-color: $primary-green;
+               button{
+                   &:focus{
+                       outline: none;
+                       box-shadow: none;
+                   }
+
+        }  
+        }    
+           
+    }
+}
+//section-seven ENDS
+
