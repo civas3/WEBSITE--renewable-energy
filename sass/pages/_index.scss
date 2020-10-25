@@ -239,3 +239,30 @@ nav{
 }
 //section-nine ENDS
 
+
+//footer
+footer{
+    background-color: $primary-green;
+    padding: 5rem;
+    border-top: solid 0.1rem $primary-purple;
+    ul{
+        h6{
+            position: relative;
+            &:after {
+                content: '';
+                width: 45%;
+                position: absolute;
+                left: 0;
+                bottom: -0.2rem;
+                border-width: 0 0 0.2rem;
+                border-style: dashed;
+            }
+        }
+        li{
+            list-style-type: disc;
+            padding: 0.4rem 0;
+        }
+    }
+}
+//footer ENDS
+

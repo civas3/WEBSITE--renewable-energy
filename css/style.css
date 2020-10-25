@@ -230,6 +230,24 @@ nav ul li a {
   font-size: 150%;
   font-weight: bold; }
 
+footer {
+  color: #ffffff; }
+  footer ul h6 {
+    font-size: 190%;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-shadow: black 0.1rem 0.1rem; }
+    footer ul h6:after {
+      content: '';
+      color: #4B3F72; }
+  footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 150%; }
+    footer ul li a:hover {
+      color: #E9D2C0;
+      text-decoration: none; }
+
 /*Utility classes are meant to do only one thing, and do it well. They are designed to be simple,
  composable and re-usable, allowing for easy and fast development. While a CSS system based on utility 
  classes alone is not desirable, having a set of utility classes that allow you to quickly put together 
@@ -418,6 +436,24 @@ nav {
   margin: 20rem 0; }
   .sectionNine h2, .sectionNine iframe {
     margin: 3rem auto 3rem auto; }
+
+footer {
+  background-color: #417B5A;
+  padding: 5rem;
+  border-top: solid 0.1rem #4B3F72; }
+  footer ul h6 {
+    position: relative; }
+    footer ul h6:after {
+      content: '';
+      width: 45%;
+      position: absolute;
+      left: 0;
+      bottom: -0.2rem;
+      border-width: 0 0 0.2rem;
+      border-style: dashed; }
+  footer ul li {
+    list-style-type: disc;
+    padding: 0.4rem 0; }
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)

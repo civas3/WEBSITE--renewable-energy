@@ -144,3 +144,33 @@ nav{
 
 }
 //section-Nine ENDS
+
+//footer
+footer{
+    color: $white;
+    ul{
+        h6{
+            font-size: 190%;
+            font-weight: bold;
+            letter-spacing: 0.2rem;
+            text-shadow: black 0.1rem 0.1rem;
+            &:after {
+                content: '';
+                color: $primary-purple;
+            }
+        }
+        li{
+            a{
+                text-decoration: none ;
+                color: $white;   
+                font-size: 150%;  
+                &:hover{
+                    color: $primary-pink;
+                    text-decoration: none;
+                }
+                
+            }
+        }
+    }
+}
+//footer ENDS
