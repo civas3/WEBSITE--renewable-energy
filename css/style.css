@@ -297,7 +297,8 @@ nav {
   justify-content: center;
   background-color: #417B5A;
   margin-bottom: 10rem;
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0;
+  border-bottom: solid 0.1rem #4B3F72; }
   nav ul li {
     margin: 0 1rem;
     padding: 0 1.2rem; }
