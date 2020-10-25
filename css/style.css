@@ -226,6 +226,10 @@ nav ul li a {
   word-spacing: 0.5rem;
   text-align: left; }
 
+.sectionNine span {
+  font-size: 150%;
+  font-weight: bold; }
+
 /*Utility classes are meant to do only one thing, and do it well. They are designed to be simple,
  composable and re-usable, allowing for easy and fast development. While a CSS system based on utility 
  classes alone is not desirable, having a set of utility classes that allow you to quickly put together 
@@ -409,6 +413,11 @@ nav {
 
 .sectionEight .image-banner {
   background-image: url(../images/sectionEight/pray.jpg); }
+
+.sectionNine {
+  margin: 20rem 0; }
+  .sectionNine h2, .sectionNine iframe {
+    margin: 3rem auto 3rem auto; }
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
