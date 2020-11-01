@@ -102,10 +102,11 @@ nav{
     @include sectionMargin;
     .container{
        margin-top: 15rem;
-          .row{
-        display: flex;
-        align-items: center;       
-    }  
+       .row{
+           display: flex;
+           align-items: center;
+       }
+  
     }  
 }
 //section-one ENDS

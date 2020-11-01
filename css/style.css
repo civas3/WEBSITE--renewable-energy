@@ -307,6 +307,14 @@ You can also shorthand most properties for faster coding. Here are a couple I us
   width: 100% !important;
   height: auto !important; }
 
+.full-screen-image {
+  width: 100% !important;
+  height: auto !important; }
+
+.full-screen-image-verticale {
+  height: 100% !important;
+  width: auto !important; }
+
 /*components*/
 /*layout*/
 /*pages*/
