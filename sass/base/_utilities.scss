@@ -44,3 +44,9 @@ You can also shorthand most properties for faster coding. Here are a couple I us
     background-repeat: no-repeat;
     background-size: contain;     
 }
+
+//responsive-video{
+    .full-screen-video{
+        width: 100% !important;
+        height: auto !important;
+    }
