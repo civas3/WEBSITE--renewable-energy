@@ -63,3 +63,11 @@ You can also shorthand most properties for faster coding. Here are a couple I us
 
     }
     
+//flex-direction-reverse
+.flex-reverse-column{
+    @include respond(tab-land) {
+        flex-direction: column-reverse;
+      }
+
+}
+

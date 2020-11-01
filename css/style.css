@@ -315,6 +315,10 @@ You can also shorthand most properties for faster coding. Here are a couple I us
   height: 100% !important;
   width: auto !important; }
 
+@media only screen and (max-width: 64em) {
+  .flex-reverse-column {
+    flex-direction: column-reverse; } }
+
 /*components*/
 /*layout*/
 /*pages*/
