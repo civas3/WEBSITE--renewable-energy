@@ -48,7 +48,13 @@ You can also shorthand most properties for faster coding. Here are a couple I us
 //responsive-video{
     .full-screen-video{
         width: 100% !important;
+        min-height: 50rem;
+        @include respond(tab-land) {
+            min-height: 30rem;
+          }
         height: auto !important;
+
+        
     }
 
 //responsive-image{

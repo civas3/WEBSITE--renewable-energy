@@ -305,7 +305,11 @@ You can also shorthand most properties for faster coding. Here are a couple I us
 
 .full-screen-video {
   width: 100% !important;
+  min-height: 50rem;
   height: auto !important; }
+  @media only screen and (max-width: 64em) {
+    .full-screen-video {
+      min-height: 30rem; } }
 
 .full-screen-image {
   width: 100% !important;
