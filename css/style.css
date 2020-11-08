@@ -223,7 +223,7 @@ nav ul li a {
     font-size: 130%; }
 
 .sectionFive {
-  margin: 20rem 0; }
+  margin: 25rem 0; }
   .sectionFive h1 {
     text-align: center; }
   .sectionFive span {
@@ -454,7 +454,7 @@ nav {
     transform: translate(-50%, -50%) rotateY(180deg); }
 
 .sectionOne {
-  margin: 20rem 0; }
+  margin: 25rem 0; }
   .sectionOne .container {
     margin-top: 15rem; }
     .sectionOne .container .row {
@@ -465,7 +465,7 @@ nav {
   background-image: url(../images/sectionTwo/clearcut-forest.jpg); }
 
 .sectionThree {
-  margin: 20rem 0; }
+  margin: 25rem 0; }
   .sectionThree .bg-primary {
     background-color: #ffffff !important; }
   .sectionThree .card-body {
@@ -477,7 +477,7 @@ nav {
   background-image: url(../images/sectionFour/chopped-forest.jpg); }
 
 .sectionFive {
-  margin: 20rem 0; }
+  margin: 25rem 0; }
   .sectionFive h1 {
     margin: 3rem auto 3rem auto; }
   .sectionFive .analogy {
@@ -502,7 +502,7 @@ nav {
   background-image: url(../images/sectionSix/never.jpg); }
 
 .sectionSeven {
-  margin: 20rem 0; }
+  margin: 25rem 0; }
   .sectionSeven h2 {
     margin: 3rem auto 3rem auto; }
   .sectionSeven iframe {
@@ -513,6 +513,9 @@ nav {
     margin-top: 5rem; }
     .sectionSeven #accordionExample iframe {
       float: right; }
+      @media only screen and (max-width: 30em) {
+        .sectionSeven #accordionExample iframe {
+          float: none; } }
     .sectionSeven #accordionExample .card-header {
       background-color: #417B5A; }
       .sectionSeven #accordionExample .card-header button:focus {
@@ -523,7 +526,7 @@ nav {
   background-image: url(../images/sectionEight/pray.jpg); }
 
 .sectionNine {
-  margin: 20rem 0; }
+  margin: 25rem 0; }
   .sectionNine h2, .sectionNine iframe {
     margin: 3rem auto 3rem auto; }
 
