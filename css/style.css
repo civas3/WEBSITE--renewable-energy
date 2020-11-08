@@ -196,6 +196,12 @@ nav ul li a {
   nav ul li a:hover {
     color: #E9D2C0; }
 
+.hero-section .carousel-caption p {
+  font-size: 5rem;
+  text-transform: capitalize;
+  text-shadow: #000 0.6rem 0.6rem;
+  font-weight: bold; }
+
 .hero-section .carousel-item:nth-child(5) a {
   font-size: 2.5rem;
   font-weight: bold;
@@ -321,7 +327,8 @@ You can also shorthand most properties for faster coding. Here are a couple I us
 
 .full-screen-image-verticale {
   height: 100% !important;
-  width: auto !important; }
+  width: auto !important;
+  max-width: 30rem; }
 
 @media only screen and (max-width: 30em) {
   .flex-reverse-column {
@@ -347,6 +354,17 @@ nav {
     nav ul li a:hover {
       animation: ease-in;
       transition-delay: 0.1s; }
+
+.hero-section .carousel-caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw; }
+
+@media only screen and (max-width: 30em) {
+  .hero-section .carousel-item {
+    height: 100vh; } }
 
 .hero-section .carousel-item:nth-child(5) .arrow-down {
   position: absolute;

@@ -26,8 +26,18 @@ nav{
 //NAV ENDS
 
 //hero-section
-.hero-section{
+.hero-section{  
+    .carousel-caption{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;
+    }  
     .carousel-item{
+        @include respond(b-phone) {
+            height: 100vh;
+          }       
             &:nth-child(5){
                 .arrow-down{
                     position: absolute;

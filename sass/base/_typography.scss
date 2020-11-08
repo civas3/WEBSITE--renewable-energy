@@ -32,7 +32,6 @@ nav{
              @include respond(tab-land) {
                 font-size: 1.8rem;
               }
-             
              text-transform: uppercase;
              font-weight: bold;
              text-shadow: $black 0.1rem 0.1rem;
@@ -47,6 +46,14 @@ nav{
 
 //hero-section
 .hero-section{
+    .carousel-caption{   
+        p{
+            font-size: 5rem;
+            text-transform: capitalize;
+            text-shadow: $black 0.6rem 0.6rem;
+            font-weight: bold;
+        }
+    }
     .carousel-item{
             &:nth-child(5){
                 a{
