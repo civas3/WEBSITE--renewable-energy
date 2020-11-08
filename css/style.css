@@ -201,12 +201,21 @@ nav ul li a {
   text-transform: capitalize;
   text-shadow: #000 0.6rem 0.6rem;
   font-weight: bold; }
+  @media only screen and (max-width: 30em) {
+    .hero-section .carousel-caption p {
+      font-size: 3.5rem; } }
+  @media only screen and (max-width: 20em) {
+    .hero-section .carousel-caption p {
+      font-size: 3rem; } }
 
 .hero-section .carousel-item:nth-child(5) a {
   font-size: 2.5rem;
   font-weight: bold;
   text-shadow: black 0.2rem 0.2rem;
   color: #E9D2C0; }
+  @media only screen and (max-width: 20em) {
+    .hero-section .carousel-item:nth-child(5) a {
+      font-size: 2rem; } }
 
 .sectionOne .container .row {
   word-spacing: 0.5rem; }
@@ -305,6 +314,9 @@ You can also shorthand most properties for faster coding. Here are a couple I us
   background-color: #D0CEBA !important;
   color: #000 !important;
   text-shadow: #ffffff 0.1rem 0.1rem; }
+  @media only screen and (max-width: 30em) {
+    .active {
+      background-color: #000; } }
 
 .image-banner {
   height: 40vh;
@@ -361,10 +373,25 @@ nav {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 80vw; }
+  @media only screen and (max-width: 30em) {
+    .hero-section .carousel-caption {
+      top: 35%;
+      width: 90vw; }
+      .hero-section .carousel-caption p:first-child {
+        margin-bottom: 37rem; } }
+    @media only screen and (max-width: 30em) and (max-width: 20em) {
+      .hero-section .carousel-caption p:first-child {
+        margin-bottom: 25rem; } }
 
 @media only screen and (max-width: 30em) {
   .hero-section .carousel-item {
-    height: 100vh; } }
+    height: 100vh;
+    background-color: #000 !important; }
+    .hero-section .carousel-item img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); } }
 
 .hero-section .carousel-item:nth-child(5) .arrow-down {
   position: absolute;
@@ -420,6 +447,9 @@ nav {
   animation-fill-mode: forwards;
   transition-property: transform;
   transition-duration: 2s; }
+  @media only screen and (max-width: 20em) {
+    .hero-section .carousel-item:nth-child(5) a {
+      bottom: 10%; } }
   .hero-section .carousel-item:nth-child(5) a:hover {
     transform: translate(-50%, -50%) rotateY(180deg); }
 

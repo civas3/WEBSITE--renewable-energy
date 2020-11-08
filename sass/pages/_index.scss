@@ -32,12 +32,32 @@ nav{
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        width: 80vw;
+        width: 80vw; 
+        @include respond(b-phone) {
+            top: 35%;
+            width: 90vw;
+          p:first-child{
+            margin-bottom: 37rem;
+            @include respond(s-phone) {
+                margin-bottom: 25rem;
+            }
+          }
+           
+        }
+        
+
     }  
     .carousel-item{
         @include respond(b-phone) {
             height: 100vh;
-          }       
+            background-color: $black !important;
+            img{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            } 
+          }      
             &:nth-child(5){
                 .arrow-down{
                     position: absolute;
@@ -101,6 +121,9 @@ nav{
                     animation-fill-mode: forwards;
                     transition-property: transform;
                     transition-duration: 2s;
+                    @include respond(s-phone) {
+                        bottom: 10%;
+                    }
                     &:hover{ 
                         transform: translate(-50%, -50%) rotateY(180deg)  ;
                     }

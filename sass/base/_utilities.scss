@@ -34,6 +34,9 @@ You can also shorthand most properties for faster coding. Here are a couple I us
     background-color: $primary-gray !important;
     color: $black !important;
     text-shadow: $white 0.1rem 0.1rem;
+    @include respond(b-phone) {
+        background-color: $black;
+      }
 }  
 
 //image-banner

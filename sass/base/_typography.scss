@@ -52,6 +52,12 @@ nav{
             text-transform: capitalize;
             text-shadow: $black 0.6rem 0.6rem;
             font-weight: bold;
+            @include respond(b-phone) {
+                font-size: 3.5rem;
+              }
+            @include respond(s-phone) {
+                font-size: 3rem;
+            }
         }
     }
     .carousel-item{
@@ -61,6 +67,9 @@ nav{
                     font-weight: bold;
                     text-shadow: black 0.2rem 0.2rem;
                     color: $primary-pink;
+                    @include respond(s-phone) {
+                        font-size: 2rem;
+                    }
                 }
             }
     }
