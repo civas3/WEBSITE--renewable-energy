@@ -290,9 +290,7 @@ footer{
         margin-bottom: 3rem;
     }
     img{
-        @include respond(b-phone) {
-            width: 100%;
-        }
+        width: 100%;
     }
     ul{
         h6{

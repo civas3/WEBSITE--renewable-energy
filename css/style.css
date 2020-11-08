@@ -536,9 +536,8 @@ footer {
   border-top: solid 0.1rem #4B3F72; }
   footer .col-md-4 {
     margin-bottom: 3rem; }
-  @media only screen and (max-width: 30em) {
-    footer img {
-      width: 100%; } }
+  footer img {
+    width: 100%; }
   footer ul h6 {
     position: relative; }
     footer ul h6:after {
