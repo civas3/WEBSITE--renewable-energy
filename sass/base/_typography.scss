@@ -29,6 +29,10 @@ nav{
          a{
              color: $white;
              font-size: 2rem;
+             @include respond(tab-land) {
+                font-size: 1.8rem;
+              }
+             
              text-transform: uppercase;
              font-weight: bold;
              text-shadow: $black 0.1rem 0.1rem;

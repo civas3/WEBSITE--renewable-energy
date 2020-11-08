@@ -11,6 +11,9 @@ nav{
      li{
          margin: 0 1rem;
          padding: 0 1.2rem;
+         @include respond(b-phone) {
+            padding: 0 0.2rem;
+          }
          a{
              &:hover{
                  animation: ease-in;
