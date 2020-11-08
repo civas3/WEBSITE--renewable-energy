@@ -286,6 +286,14 @@ footer{
     background-color: $primary-green;
     padding: 5rem;
     border-top: solid 0.1rem $primary-purple;
+    .col-md-4{
+        margin-bottom: 3rem;
+    }
+    img{
+        @include respond(b-phone) {
+            width: 100%;
+        }
+    }
     ul{
         h6{
             position: relative;
