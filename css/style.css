@@ -222,6 +222,13 @@ nav ul li a {
   .sectionOne .container .row span {
     font-size: 130%; }
 
+.sectionThree .container .row {
+  word-spacing: 0.5rem; }
+  .sectionThree .container .row h2 {
+    text-align: center; }
+  .sectionThree .container .row span {
+    font-size: 150%; }
+
 .sectionFive {
   margin: 25rem 0; }
   .sectionFive h1 {
@@ -466,6 +473,8 @@ nav {
 
 .sectionThree {
   margin: 25rem 0; }
+  .sectionThree h2 {
+    margin-bottom: 5rem; }
   .sectionThree .bg-primary {
     background-color: #ffffff !important; }
   .sectionThree .card-body {

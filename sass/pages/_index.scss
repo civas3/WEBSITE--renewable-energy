@@ -159,6 +159,9 @@ nav{
 //section-three
 .sectionThree{
     @include sectionMargin; 
+    h2{
+        margin-bottom: 5rem;
+    }
     .bg-primary{
         background-color: $white !important;
 }

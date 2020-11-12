@@ -89,6 +89,22 @@ nav{
 }
 //section-one ENDS
 
+//section-three
+.sectionThree{
+    .container{
+          .row{  
+        word-spacing: 0.5rem;
+        h2{
+            text-align: center;
+        }
+        span{
+            font-size: 150%;
+        }      
+    }  
+    }  
+}
+//section-three ENDS
+
 //section-five
 .sectionFive{
     @include sectionMargin; 
