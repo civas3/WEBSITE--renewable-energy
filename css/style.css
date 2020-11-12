@@ -531,7 +531,11 @@ nav {
   .sectionSeven h2 {
     margin: 3rem auto 3rem auto; }
   .sectionSeven iframe {
-    margin: 3rem auto 3rem auto; }
+    margin: 3rem auto 3rem auto;
+    padding-left: 3rem; }
+    @media only screen and (max-width: 30em) {
+      .sectionSeven iframe {
+        padding-left: 0; } }
   .sectionSeven p {
     margin: 3rem auto 3rem auto; }
   .sectionSeven #accordionExample {
@@ -543,9 +547,11 @@ nav {
           float: none; } }
     .sectionSeven #accordionExample .card-header {
       background-color: #417B5A; }
-      .sectionSeven #accordionExample .card-header button:focus {
-        outline: none;
-        box-shadow: none; }
+      .sectionSeven #accordionExample .card-header button {
+        width: 100%; }
+        .sectionSeven #accordionExample .card-header button:focus {
+          outline: none;
+          box-shadow: none; }
 
 .sectionEight .image-banner {
   background-image: url(../images/sectionEight/pray.jpg); }
