@@ -186,7 +186,7 @@ nav{
 //section-five
 .sectionFive{
     @include sectionMargin; 
-    h1{
+    h2{
         margin: 3rem auto 3rem auto;
     }  
     .analogy{
@@ -215,6 +215,14 @@ nav{
         margin-left: auto;
         display: flex;
         justify-content: center;
+        margin-top: 20vh;
+        .youtube-video{
+            @include respond(b-phone) {
+                width: 100%;              
+                min-height: 25rem;
+                height: auto;
+            }  
+        }
     }
 
 }

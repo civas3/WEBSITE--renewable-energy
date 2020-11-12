@@ -203,6 +203,8 @@ h2 {
   @media only screen and (max-width: 30em) {
     h2 {
       font-size: 3rem !important; } }
+  h2:nth-child(2) {
+    color: red !important; }
 
 span {
   font-size: 150%;
@@ -495,7 +497,7 @@ nav {
 
 .sectionFive {
   margin: 25rem 0; }
-  .sectionFive h1 {
+  .sectionFive h2 {
     margin: 3rem auto 3rem auto; }
   .sectionFive .analogy {
     margin: 5rem auto 2rem auto; }
@@ -513,7 +515,13 @@ nav {
     margin-right: auto;
     margin-left: auto;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 20vh; }
+    @media only screen and (max-width: 30em) {
+      .sectionFive .modal-content .youtube-video {
+        width: 100%;
+        min-height: 25rem;
+        height: auto; } }
 
 .sectionSix .image-banner {
   background-image: url(../images/sectionSix/never.jpg); }
