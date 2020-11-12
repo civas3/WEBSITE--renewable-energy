@@ -143,6 +143,20 @@ ORDER: Base + typography > general layout + grid > page layout > components
   to {
     transform: translateY(0); } }
 
+.hide-image {
+  visibility: hidden; }
+
+.fadeIn {
+  -webkit-animation: show-image 0.8s;
+  animation: show-image 0.8s;
+  visibility: visible !important; }
+
+@-webkit-keyframes show-image {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
