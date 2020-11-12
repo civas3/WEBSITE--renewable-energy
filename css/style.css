@@ -537,7 +537,13 @@ footer {
   footer .col-md-4 {
     margin-bottom: 3rem; }
   footer img {
-    width: 100%; }
+    width: 80%; }
+    @media only screen and (max-width: 30em) {
+      footer img {
+        width: 100%; } }
+  @media only screen and (max-width: 30em) {
+    footer ul {
+      margin-bottom: 2rem; } }
   footer ul h6 {
     position: relative; }
     footer ul h6:after {
@@ -551,6 +557,11 @@ footer {
   footer ul li {
     list-style-type: disc;
     padding: 0.4rem 0; }
+    footer ul li:nth-child(2) {
+      margin-top: 1.5rem; }
+      @media only screen and (max-width: 30em) {
+        footer ul li:nth-child(2) {
+          margin-top: 1rem; } }
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)

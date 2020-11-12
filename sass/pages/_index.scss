@@ -290,9 +290,16 @@ footer{
         margin-bottom: 3rem;
     }
     img{
-        width: 100%;
+        width: 80%;
+        @include respond(b-phone) {
+            width: 100%;
+        } 
     }
     ul{
+        @include respond(b-phone) {
+            margin-bottom: 2rem;
+        }
+       
         h6{
             position: relative;
             &:after {
@@ -308,6 +315,12 @@ footer{
         li{
             list-style-type: disc;
             padding: 0.4rem 0;
+            &:nth-child(2){
+                margin-top: 1.5rem;
+                @include respond(b-phone) {
+                    margin-top: 1rem;                }
+            }
+           
         }
     }
 }
