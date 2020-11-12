@@ -46,6 +46,9 @@ You can also shorthand most properties for faster coding. Here are a couple I us
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;     
+    @include respond(b-phone) {
+        height: 60vh;
+    } 
 }
 
 //responsive-video{
