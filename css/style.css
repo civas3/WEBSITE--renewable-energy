@@ -184,6 +184,13 @@ p {
   font-weight: 400;
   padding-bottom: 1rem; }
 
+h2 {
+  text-align: center; }
+
+span {
+  font-size: 150%;
+  font-weight: bold; }
+
 nav ul li a {
   color: #ffffff;
   font-size: 2rem;
@@ -220,22 +227,13 @@ nav ul li a {
 .sectionOne .container .row {
   word-spacing: 0.5rem; }
   .sectionOne .container .row span {
-    font-size: 130%; }
+    font-weight: normal; }
 
 .sectionThree .container .row {
   word-spacing: 0.5rem; }
-  .sectionThree .container .row h2 {
-    text-align: center; }
-  .sectionThree .container .row span {
-    font-size: 150%; }
 
 .sectionFive {
   margin: 25rem 0; }
-  .sectionFive h1 {
-    text-align: center; }
-  .sectionFive span {
-    font-size: 250%;
-    font-weight: bold; }
   .sectionFive .analogy span {
     font-size: 210%; }
   .sectionFive .lead {
@@ -249,13 +247,6 @@ nav ul li a {
         color: black;
         text-shadow: #ffffff 0.1rem 0.1rem; }
 
-.sectionSeven h2 {
-  text-align: center; }
-
-.sectionSeven span {
-  font-size: 150%;
-  font-weight: bold; }
-
 .sectionSeven .card-text {
   text-align: center; }
 
@@ -266,10 +257,6 @@ nav ul li a {
   letter-spacing: 0.1rem;
   word-spacing: 0.5rem;
   text-align: left; }
-
-.sectionNine span {
-  font-size: 150%;
-  font-weight: bold; }
 
 footer {
   color: #ffffff; }

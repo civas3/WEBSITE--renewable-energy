@@ -17,8 +17,16 @@ p{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8rem;
     font-weight: 400;  
-    padding-bottom: 1rem;
-    
+    padding-bottom: 1rem;   
+}
+
+h2{
+    text-align: center;
+}
+
+span{
+    font-size: 150%;
+    font-weight: bold;
 }
 
 
@@ -82,7 +90,7 @@ nav{
           .row{
         word-spacing: 0.5rem;
         span{
-            font-size: 130%;
+            font-weight: normal;
         }      
     }  
     }  
@@ -93,13 +101,7 @@ nav{
 .sectionThree{
     .container{
           .row{  
-        word-spacing: 0.5rem;
-        h2{
-            text-align: center;
-        }
-        span{
-            font-size: 150%;
-        }      
+        word-spacing: 0.5rem;    
     }  
     }  
 }
@@ -108,14 +110,6 @@ nav{
 //section-five
 .sectionFive{
     @include sectionMargin; 
-    h1{
-        text-align: center;
-    }
-    span{
-        font-size: 250%;
-        font-weight: bold;
-    }
-  
     .analogy{
          span{
             font-size: 210%;
@@ -140,14 +134,7 @@ nav{
 //section-five ENDS
 
 //section-seven
-.sectionSeven{
-    h2{
-        text-align: center;
-    }  
-    span{
-        font-size: 150%;
-        font-weight: bold;
-    }
+.sectionSeven{ 
     .card-text{
         text-align: center;
     }
@@ -172,15 +159,6 @@ nav{
 //section-seven ENDS
 
 
-//section-nine
-.sectionNine{
-    span{
-        font-size: 150%;
-        font-weight: bold;
-    }
-
-}
-//section-Nine ENDS
 
 //footer
 footer{
