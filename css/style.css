@@ -200,6 +200,9 @@ p {
 
 h2 {
   text-align: center; }
+  @media only screen and (max-width: 30em) {
+    h2 {
+      font-size: 3rem !important; } }
 
 span {
   font-size: 150%;
