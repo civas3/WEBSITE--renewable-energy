@@ -484,7 +484,8 @@ nav {
   .sectionThree .card-body {
     overflow-x: hidden;
     border: none;
-    padding: 0; }
+    padding: 0;
+    border: #4B3F72 solid 0.1rem; }
 
 .sectionFour .image-banner {
   background-image: url(../images/sectionFour/chopped-forest.jpg); }
