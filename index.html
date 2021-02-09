@@ -11,678 +11,867 @@
     <link rel="stylesheet" href="css/bootstrap-style.css" />
 
     <!--Google Font-->
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300&display=swap"
+        rel="stylesheet">
 
-    <!--jQuery-->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
-    <!--JS-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    <!--Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
 
+    <!--JQuery-->    
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+    <!--Font Awesome ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--AOS Animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--Favicon-->
     <link rel="shortcut icon" type="images/png" href="images/favicon/favicon.png" />
-
     <title>Renewable-Energy</title>
 </head>
-
 <body>
-
-
-
     <main>
-    <!--CAROUSEL-->
-    <section class="hero-section">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active" id="slide1">
-                <img class="d-block w-100" src="./images/carousel/hero-1.png " data-holder-rendered="true">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./images/carousel/hero-2.png " data-holder-rendered="true" >
-                <div class="carousel-caption">
-                    <p>"Don't worry we have a solution for climate change"</p>
-                    <p>"RENEWABLE ENERGY" They say..</p>
-                   
-                </div>
-            </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./images/carousel/hero-3.png " data-holder-rendered="true" >
-                <div class="carousel-caption">
-                    <p>How would you feel if I tell you that:</p>
-                    <p>"RENEWABLE ENERGY" = Burning the world's forests..?</p>
-                </div>
-            </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./images/carousel/hero-4.png " data-holder-rendered="true" >
-                <div class="carousel-caption">
-                    <p>This will accelerate climate change</p>
-                    <P>and devastate forests..</P>
-                </div>
-            </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="./images/carousel/hero-5.png " data-holder-rendered="true" >
-                <div class="arrow-down">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <a class="btn btn-info" href="#navigation">FIND OUT MORE</a>
-            </div>
-            </div>
-          
-          
-          </div>
+        <!--CAROUSEL-->
+        <section id="hero" class="hero-section vh-100">
 
-    </section>
-    <!--CAROUSEL ENDS-->
-
-  
-    <nav id="navigation">
-            <ul class="nav nav-pills nav-fill">
-                <li class="nav-item ">
-                  <a class="nav-link active" href="#sectionOne">Facts</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#sectionThree">Impact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#sectionFive">Horrible True</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sectionSeven">Join the Mission!</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#sectionNine">Solution?</a>
-                  </li>
-              </ul>
-              
-    </nav>
-
-
-    <!--SECTION ONE-->
-    <section class="sectionOne" id="sectionOne">
-
-        <div class="container">
-            <div class="row flex-reverse-column">
-                <div class="col-md-5 module">
-                    <p>Imagine a gigantic cube of logs measuring nearly 760 meters (almost half a mile) on each side.
-                        That’s how much wood the European Union (EU) <span>burns <u>every year</u></span> to generate
-                        heat and electricity.</p>
-                    <p> Europe’s forests are degrading steadily, as documented by annual forest status reports.
-                        Three-quarters of all animal and plant species and habitats are in an unsatisfactory state and
-                        biodiversity is in <span> danger</span> of collapse.</p>
-                </div>
-                <div class="col-md-7 module">
-                    <img  class="full-screen-image" src="./images/sectionOne/reusable-energy.png" alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 module">
-                    <img class="full-screen-image-verticale" src="./images/sectionOne/solar-panel.png" alt="">
-                </div>
-                <div class="col-md-5 module">
-                    <p>Photovoltaic cells require a staggering variety of <span>rare earth minerals</span> to build, one
-                        of the most important of which is silver.</p>
-                    <p> Given current technology (and assuming 20% efficiency), we’d need to cover an area the size of
-                        Spain in solar panels to generate enough electricity to meet our global electricity demands by
-                        2030. </p>
-                    <p>This is a lot of land, which would be better off being farmed, or preserved. </p>
-                    <p>But even if we wanted to build that many solar panels, we couldn’t do it—there’s simply 
-                        <span>not enough silver</span> in the world.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row flex-reverse-column">
-                <div class="col-md-5 module">
-                    <p>Lithium-ion batteries are a crucial component of efforts to clean up the planet. <span>But there’s a problem</span>
-                        ..</p>
-                    <p>As the world scrambles to replace fossil fuels with clean energy, the environmental impact of
-                        finding all the lithium required to enable that transformation could become a <span>serious
-                            issue</span> in its own right. “One of the biggest environmental problems caused by our
-                        endless hunger for the latest and smartest devices is a <span>growing mineral crisis</span> ,
-                        particularly those needed to make our batteries</p>
-                    <p>In South America, the biggest problem is <span>water</span>. The continent’s Lithium Triangle,
-                        which covers parts of Argentina, Bolivia and Chile
-                    </p>
-                    <p>In Chile’s Salar de Atacama,<span> mining activities consumed 65 per cent of the region’s
-                            water</span>. That is having a big impact on local farmers – who grow quinoa and herd llamas
-                        – in an area where some communities already have to get water driven in from elsewhere..</p>
-                </div>
-                <div class="col-md-7 module ">
-                    <img class="full-screen-image" src="./images/sectionOne/electric-vehicle.html.png" alt="">
-
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 module">
-                    <img class="full-screen-image-verticale" src="./images/sectionOne/wind-power.png" alt="">
-                </div>
-                <div class="col-md-5 module">
-                    <p>As with all energy supply options, wind energy can have adverse environmental impacts, including
-                        the potential to <span>reduce, fragment,</span> or <span>degrade habitat</span> for wildlife,
-                        fish, and plants. Furthermore, spinning turbine blades can pose a threat to flying wildlife like
-                        birds and bats.</p>
-                    <p>Scientists studied wind projects in Ontario (Canada) for 10 years. They found that each wind
-                        turbine <span>kills</span> around 5 birds and 12 bats <span>every year!</span> </p>
-                    <p>There are 2 577 wind turbines just in Ontario. Try to do the math. That is <span>a lot</span> of
-                        birds, and even more bats! </p>
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!--SECTION ONE ENDS-->
-
-
-    <!--SECTION TWO IMAGE-->
-    <section class="sectionTwo">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 image-banner">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--SECTION TWO ENDS-->
-
-
-    <!--SECTION THREE-->
-    <section class="sectionThree" id="sectionThree">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="display-3">Ecosystems, the fabric of life on which we all depend, are declining rapidly because of <span>human</span> actions..</h2>
-
-                    <div class="card-columns">
-                        <div class="card bg-primary p-3 text-center">
-                            <!-- Card content -->
-                            <p>The amount of wildlife in the world’s forests has plummeted by more than half (53 per
-                                cent) in just over 40 years, conservationists have found.
-
-                                Humanity is killing the Earth’s greatest natural ally in the fight against climate
-                                breakdown, our forests, according to the report by the WWF.</p>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <!-- Card content -->
-                                <img class="hide-image" src="./images/sectionThree/two.jpg" alt="">
-
-                            </div>
-                        </div>
-                        <div class="card bg-primary p-3 text-center">
-                            <!-- Card content -->
-                            <p>Last year, China’s State Council reported that the country’s rare earths operations are
-                                causing “increasingly significant” environmental problems. A half century of rare earths
-                                mining and processing has “severely damaged surface vegetation, caused soil erosion,
-                                pollution, and acidification, and reduced or even eliminated food crop output,”</p>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/carousel/hero-1.jpg " class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <p>If everyone lived like we do now, we'd need two or three planets like Earth to
+                                sustain us.</p>
+                            <p> But we only have <span class="size-5 font-weight-light">one</span> planet..</span>
                         </div>
 
-                        <div class="card">
-                            <div class="card-body">
-                                <!-- Card content -->
-                                <img class="hide-image" src="./images/sectionThree/four.jpg" alt="">
-
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <!-- Card content -->
-                                <img  class="hide-image" src="./images/sectionThree/six.jpg" alt="">
-
-                            </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel/hero-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <p>Big corporations and politicians lies, lies and lies & gets away with it..</p>
+                            <p><span>"Don't worry!"</span> We have a solution..</p>
+                            <p>"RENEWABLE ENERGY" they say..</p>
                         </div>
 
-                        <div class="card bg-primary p-3 text-center">
-                            <!-- Card content -->
-                            <p>Forests cover 31% of the land area on our planet. They help people thrive and survive by,
-                                for example, purifying water and air and providing people with jobs; some 13.2 million
-                                people across the world have a job in the forest sector and another 41 million have a
-                                job that is related to the sector. Many animals also rely on forests. Eighty percent of
-                                the world's land-based species, such as elephants and rhinos, live in forests. Forests
-                                also play a critical role in mitigating climate change because they act as a carbon
-                                sink—soaking up carbon dioxide that would otherwise be free in the atmosphere and
-                                contribute to ongoing changes in climate patterns. </p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel/hero-3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <p>How would you feel if I would tell you that:</p>
+                            <p>"RENEWABLE ENERGY" = </p>
+                          
+                            <p>Burning the world's forests,
+                                Draining our Earth’s precious landscapes &
+                                Killing the wild life?
+                            </p>
                         </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <!-- Card content -->
-                                <img  class="hide-image" src="./images/sectionThree/five.jpg" alt="">
-                            </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carousel/hero-4.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <p>This will accelerate climate change & devastate our Earth, Wildlife and the future
+                                Genrations..</p>
                         </div>
-                        <div class="card bg-primary p-3 text-center">
-                            <!-- Card content -->
-                            <p>The world’s huge demand for wood, paper and agricultural products has led to some
-                                shocking and unsustainable management of forests. Too many forests are being dangerously
-                                damaged, or completely destroyed.</p>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-body">
-                                <!-- Card content -->
-                                <img class="hide-image" src="./images/sectionThree/one.jpg" alt="">
-
-
-                            </div>
-                        </div>
-                        <div class="card bg-primary p-3 text-center">
-                            <!-- Card content -->
-                            <p>Lithium mining - “Like any mining process, it is invasive, it scars the landscape, it
-                                destroys the water table and it pollutes the earth and the local wells,” said Guillermo
-                                Gonzalez, a lithium battery expert from the University of Chile, in a 2009 interview.
-                                “This isn’t a green solution – it’s not a solution at all.”</p>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <!-- Card content -->
-                                <img class="hide-image" src="./images/sectionThree/three.jpg" alt="">
-
-
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <!--CAROUSEL ENDS-->
 
-    </section>
-    <!--SECTION THREE ENDS-->
-
-    <!--SECTION FOUR IMAGE-->
-    <section class="sectionFour">
-        <div class="container-fluid ">
-            <div class="row">
-                <div class="col-md-12 image-banner">
+  
+                <!--NAV-->
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#"><h1>g<span>One</span></h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#introduction">Introduction</a>
+                        <a class="nav-link" href="#impact">Impact</a>
+                        <a class="nav-link" href="#cause">Cause</a>
+                        <a class="nav-link" href="#mission">How can you help?</a>
+                        <a class="nav-link" href="#nuclear">Nuclear?</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--SECTION FOUR ENDS-->
+        </nav>
+        <!--NAV ENDS-->
 
-    <!--SECTION FIVE-->
-    <section class="sectionFive" id="sectionFive">
-        
-        <div class="container ">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="display-3"><span>Please</span> watch this film to understant the emergency..</h2>
-                    <span>Planet of the Humans</span> [environmental documentary]
-  
-                      
-                        <p>A conclusion of the film is that green energy cannot solve the problem of society's expanding
-                            resource depletion without reducing consumption, as all existing forms of energy generation
-                            require consumption of finite resources. The film argues that renewable energy sources,
-                            including biomass energy, wind power, and solar energy, are not as renewable as they are
-                            portrayed to be.</p>
-                  <div class="card">
-                        <div class="col-md-8 col-s-12 analogy">
-                            <span>Only 90 minutes and you will be stunned at the end of the movie.</span>
-                            <span>But don't be paralyzed by it..</span>
-                            <span>We all can still figure this out..</span>
-                            <span>I know we’re out of time, but let me just close with this analogy:</span>
-                            <br>
-                            <br>
-                            <p>It’s like we're in a lifeboat and there's a leak and it's taking on a lot of water and
-                                we're all going to drown, we’re all going to die every one of us in the lifeboat. </p>
-                            <p>But I see a Dixie cup a little cup a little paper cup over there in the corner and I’m
+    
+
+        <!--SECTION INTRODUCTION-->
+        <section class="introduction overflow-hidden nav-menu-item" id="introduction">
+            <div class="container">
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-md-5 align-self-center">
+                        <div class="section-content slide-in">
+                            <p>Imagine a gigantic cube of logs measuring nearly 760 meters (almost half a mile) on each
+                                side.
+                                That’s how much wood the European Union (EU) <span>burns <u>every year</u></span> to
+                                generate
+                                heat and electricity.</p>
+                            <p> Europe’s forests are degrading steadily, as documented by annual forest status reports.
+                                Three-quarters of all animal and plant species and habitats are in an unsatisfactory
+                                state
+                                and
+                                biodiversity is in <span> danger</span> of collapse.</p>
+                        </div>
+                    </div>
+                    <!--col ends-->
+                    <div class="col-md-7 align-self-center">
+                        <div class="section-image">
+                            <img class="full-screen-image" src="./images/introduction/reusable-energy.png" alt="">
+                        </div>
+                    </div>
+                    <!--col ends-->
+
+                </div>
+                <!--row ends-->
+                <div class="row flex-column-reverse flex-md-row ">
+                    <div class="col-sm-12 col-md-5 align-self-center">
+                        <div class="section-content slide-in">
+                            <p>Photovoltaic cells require a staggering variety of <span>rare earth minerals</span> to
+                                build,
+                                one
+                                of the most important of which is silver.</p>
+                            <p> Given current technology (and assuming 20% efficiency), we’d need to cover an area the
+                                size
+                                of
+                                Spain in solar panels to generate enough electricity to meet our global electricity
+                                demands
+                                by
+                                2030. </p>
+                            <p>This is a lot of land, which would be better off being farmed, or preserved. </p>
+                            <p>But even if we wanted to build that many solar panels, we couldn’t do it—there’s simply
+                                <span>not enough silver</span> in the world.
+                            </p>
+                        </div>
+                    </div>
+                    <!--col ends-->
+
+                    <div class="col-sm-12 col-md-7 order-md-first align-self-center">
+                        <div class="section-image">
+                            <img class="full-screen-image" src="./images/introduction/solar-panel.png" alt="">
+                        </div>
+                    </div>
+                    <!--col ends-->
+
+                </div>
+                <!--row ends-->
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-sm-12 col-md-5 align-self-center">
+                        <div class="section-content slide-in">
+                            <p>Lithium-ion batteries are a crucial component of efforts to clean up the planet.
+                                <span>But
+                                    there’s a problem</span>
+                                ..</p>
+                            <p>As the world scrambles to replace fossil fuels with clean energy, the environmental
+                                impact of
+                                finding all the lithium required to enable that transformation could become a
+                                <span>serious
+                                    issue</span> in its own right. “One of the biggest environmental problems caused by
+                                our
+                                endless hunger for the latest and smartest devices is a <span>growing mineral
+                                    crisis</span>
+                                ,
+                                particularly those needed to make our batteries</p>
+                            <p>In South America, the biggest problem is <span>water</span>. The continent’s Lithium
+                                Triangle,
+                                which covers parts of Argentina, Bolivia and Chile
+                            </p>
+                            <p>In Chile’s Salar de Atacama,<span> mining activities consumed 65 per cent of the region’s
+                                    water</span>. That is having a big impact on local farmers – who grow quinoa and
+                                herd
+                                llamas
+                                – in an area where some communities already have to get water driven in from elsewhere..
+                            </p>
+
+                        </div>
+                    </div>
+                    <!--col ends-->
+
+                    <div class="col-sm-12 col-md-7 align-self-center">
+                        <div class="section-image">
+                            <img class="full-screen-image" src="./images/introduction/electric-vehicle.html.png" alt="">
+                        </div>
+                    </div>
+                    <!--col ends-->
+
+                </div>
+                <!--row ends-->
+                <div class="row flex-column-reverse flex-md-row">
+                    <div class="col-sm-12 col-md-5 align-self-center">
+                        <div class="section-content slide-in">
+                            <p>As with all energy supply options, wind energy can have adverse environmental impacts,
+                                including
+                                the potential to <span>reduce, fragment,</span> or <span>degrade habitat</span> for
+                                wildlife,
+                                fish, and plants. Furthermore, spinning turbine blades can pose a threat to flying
+                                wildlife
+                                like
+                                birds and bats.</p>
+                            <p>Scientists studied wind projects in Ontario (Canada) for 10 years. They found that each
+                                wind
+                                turbine <span>kills</span> around 5 birds and 12 bats <span>every year!</span> </p>
+                            <p>There are 2 577 wind turbines just in Ontario. Try to do the math. That is <span>a
+                                    lot</span>
+                                of
+                                birds, and even more bats! </p>
+                        </div>
+                    </div>
+                    <!--col ends-->
+
+                    <div class="col-sm-12 col-md-7 order-md-first align-self-center">
+                        <div class="section-image">
+                            <img class="full-screen-image" src="./images/introduction/wind-power.png" alt="">
+                        </div>
+                    </div>
+                    <!--col ends-->
+
+                </div>
+                <!--row ends-->
+
+            </div>
+            <!--container ends-->
+        </section>
+        <!--SECTION INTRODUCTION ENDS-->
+
+
+        <!--BANNER-->
+        <section class="banner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 image-banner image-one">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--BANNER ENDS-->
+
+
+        <!--SECTION IMPACT-->
+        <section class="impact nav-menu-item" id="impact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h2>Ecosystems, the fabric of life on which we all depend, are declining
+                                rapidly because of <span>human</span> actions..</h2>
+                        </div>
+                        <div class="section-content overflow-hidden">
+
+                            <div class="card mb-3" data-aos="fade-right" data-aos-duration="2000">
+                                <div class="row ">
+                                    <div class="col-md-4 impact-bg-1 ">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Environmental Problems</h4>
+                                            <p class="card-text ">
+                                                Last year, China’s State Council reported that the country’s rare earths
+                                                operations
+                                                are causing “increasingly significant” environmental problems. A half
+                                                century of rare
+                                                earths mining and processing has “severely damaged surface vegetation,
+                                                caused soil erosion,
+                                                pollution, and acidification, and reduced or even eliminated food crop
+                                                output,”
+                                            </p>
+                                            <p class="card-text d-inline-block text-center"><small class="text-muted">“I’ve starred in a lot of science fiction movies and, let me tell you something, climate change is not science fiction. This is a battle in the real world, it is impacting us right now.”</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3" data-aos="fade-left" data-aos-duration="2000">
+                                <div class="row g-0 ">
+                                    <div class="col-md-8 order-2 order-md-1 ">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Extincting Wildlife</h4>
+                                            <p class="card-text">
+                                                The amount of wildlife in the world’s forests has plummeted by more than
+                                                half (53 per
+                                                cent) in just over 40 years, conservationists have found.
+                                                Humanity is killing the Earth’s greatest natural ally in the fight
+                                                against climate
+                                                breakdown, our forests, according to the report by the WWF.
+                                            </p>
+                                            <p class="card-text d-inline-block text-center"><small class="text-muted">“Climate change is real. It is happening right now, it is the most urgent threat facing our entire species and we need to work collectively together and stop procrastinating.”</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 impact-bg-2 order-1 order-md-2 ">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card mb-3" data-aos="fade-right" data-aos-duration="2000">
+                                <div class="row g-0">
+                                    <div class="col-md-4 impact-bg-3">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Devastating Forests</h4>
+                                            <p class="card-text">Forests cover 31% of the land area on our planet. They
+                                                help people thrive and survive
+                                                by,
+                                                for example, purifying water and air and providing people with jobs;
+                                                some 13.2
+                                                million
+                                                people across the world have a job in the forest sector and another 41
+                                                million have
+                                                a
+                                                job that is related to the sector. Many animals also rely on forests.
+                                                Eighty percent
+                                                of
+                                                the world's land-based species, such as elephants and rhinos, live in
+                                                forests.
+                                                Forests
+                                                also play a critical role in mitigating climate change because they act
+                                                as a carbon
+                                                sink—soaking up carbon dioxide that would otherwise be free in the
+                                                atmosphere and
+                                                contribute to ongoing changes in climate patterns. </p>
+                                            <p class="card-text d-inline-block text-center"><small class="text-muted">“Pollution and climate change by excessive burning of fossil fuels are real threats, not the people who warn that we must take these threats seriously.”</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3" data-aos="fade-left" data-aos-duration="2000">
+                                <div class="row g-0">
+                                    <div class="col-md-8 order-2 order-md-1">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Landscape Wounding</h4>
+                                            <p class="card-text">Lithium mining - “Like any mining process, it is
+                                                invasive, it scars the landscape, it destroys the water table and it
+                                                pollutes the earth and the local wells,” said Guillermo Gonzalez, a
+                                                lithium battery expert from the University of Chile, in a 2009
+                                                interview. “This isn’t a green solution – it’s not a solution at all.”
+                                            </p>
+                                            <p class="card-text d-inline-block text-center"><small class="text-muted">“Twenty-five years ago people could be excused for not knowing much, or doing much, about climate change. Today we have no excuse.“</small></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 impact-bg-4 order-1 order-md-2">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card mb-3" data-aos="fade-right" data-aos-duration="2000">
+                                <div class="row g-0">
+                                    <div class="col-md-4 impact-bg-5">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Forests Destruction</h4>
+                                            <p class="card-text">The world’s huge demand for wood, paper and
+                                                agricultural products has led to some
+                                                shocking and unsustainable management of forests. Too many forests are
+                                                being dangerously
+                                                damaged, or completely destroyed.</p>
+                                            <p class="card-text d-inline-block text-center"><small class="text-muted">“We don’t have time to sit on our hands as our planet burns. For young people, climate change is bigger than election or re-election. It’s life or death.”</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--SECTION IMPACT ENDS-->
+
+        <!--BANNER-->
+        <section class="banner">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-md-12 image-banner image-two">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--BANNER ENDS-->
+
+        <!--SECTION CAUSE-->
+        <section class="cause nav-menu-item" id="cause">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h2>Please watch this film to understant the <span>emergency</span> ..</h2>
+                        </div>
+                        <div class="section-content wd-80 mx-auto">
+                            <h3 class=" font-weight-bold">Planet of the Humans</h3> <span>[environmental documentary]</span> 
+                            <p class="p-intro">A conclusion of the film is that green energy cannot solve the problem of society's
+                                expanding
+                                resource depletion without reducing consumption, as all existing forms of energy
+                                generation
+                                require consumption of finite resources. The film argues that renewable energy sources,
+                                including biomass energy, wind power, and solar energy, are not as renewable as they are
+                                portrayed to be.</p>
+                            <span>
+                                Only 90 minutes and you will be stunned at the end of the movie.
+                                But don't be paralyzed by it..
+                                We all can still figure this out..
+                                I know we’re out of time, but let me just close with this analogy:
+                            </span>
+                            <p>It’s like we're in a lifeboat and there's a leak and it's taking on a lot of water
+                                and
+                                we're all going to drown, we’re all going to die every one of us in the lifeboat.
+                            </p>
+                            <p>But I see a Dixie cup a little cup a little paper cup over there in the corner and
+                                I’m
                                 thinking well I should start bailing the water out with this Dixie cup? </p>
                             <p>But the problem with that is that I know the laws of physics that little cup is not
                                 enough to get all this water out - we're going to die..</p>
                             <p>But if the Dixie cup is sitting there what would you do?</p>
-                            <p>Would you just sit there and let the boat go down or would you pick it up even though you
+                            <p>Would you just sit there and let the boat go down or would you pick it up even though
+                                you
                                 know you're not going to save yourself?</p>
                             <p>You'd pick it up wouldn't you because here's what happens with us human beings - you
                                 start picking it up and you're failing and you're bailing and you look like a crazy
                                 man..</p>
-                            <p>But then there’s a guy sitting on the other end of the lifeboat and he takes off his ball
+                            <p>But then there’s a guy sitting on the other end of the lifeboat and he takes off his
+                                ball
                                 cap and he starts bailing with the ball cap..</p>
-                            <p>Then there's a woman over in the other corner and she's got a bag and out of the bag she
-                                pulls out her plastic 3d printer and she prints a scoop and she starts bailing and then
+                            <p>Then there's a woman over in the other corner and she's got a bag and out of the bag
+                                she
+                                pulls out her plastic 3d printer and she prints a scoop and she starts bailing and
+                                then
                                 the other suddenly joins and now everybody in the lipo..</p>
-                            <p>Everyone is coming up with their genius idea which if none of those on their own would
-                                ever bale enough water to save everybody - But if everybody came up with these new ideas
+                            <p>Everyone is coming up with their genius idea which if none of those on their own
+                                would
+                                ever bale enough water to save everybody - But if everybody came up with these new
+                                ideas
                                 and started doing them we have a chance to live and survive ..</p>
-                            <p>That’s the optimistic end of that story but it requires all of us to do our part..</p>
+                            <p>That’s the optimistic end of that story but it requires all of us to do our part..
+                            </p>
                             <p>For those who have gotten into bed with Wall Street and corporate America and these
                                 billionaires we just have to say thank you for all your good work you did over the
-                                years. You've done whatever you've had to do for whatever reasons you had to but we have
-                                to save this goddamn planet!!!</p>
-                        </div>
+                                years. You've done whatever you've had to do for whatever reasons you had to but <span> we
+                                have
+                                to save this goddamn planet!!! <span></p>
 
-                        <p class="lead">
-                            <!-- Large modal -->
-                            <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary modal-button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" data-aos="fade-up"
+                                data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
                                 Click Here to Play the Film..
                             </button>
-                        </p>
 
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <iframe class="youtube-video" width="820" height="450"
-                                        src="https://www.youtube.com/watch?v=5x7UgKfSug0?rel=0" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">Planet of the Humans - Full
+                                                Documentary</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close" ></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="video-container">
+                                                <iframe class="youtube-video" width="820" height="450"
+                                                    src="https://www.youtube.com/embed/5x7UgKfSug0?rel=0"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <!--SECTION CAUSE ENDS-->
+
+        <!--SECTION BANNER-->
+        <section class="banner">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-md-12 image-banner image-three">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--SECTION BANNER ENDS-->
+
+
+        <!--SECTION MISSION-->
+        <section class="mission nav-menu-item" id="mission">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2> Start a Sustainable life style to help <span>your</span> planet ..</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item ">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What Is Sustainability and Why Is It Important?
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                        <p>
+                                            Sustainability helps us to improve the quality of our lives and the
+                                            diversity of life in our ecosystem. If we do not promote sustainability then
+                                            we will
+                                            soon
+                                            run out of fossil fuels and many animals will become extinct. We will also
+                                            damage
+                                            our
+                                            environment. We should practice sustainable living and encourage others to
+                                            do the
+                                            same as
+                                            well. If necessary we should arrange community activities to make people
+                                            aware of
+                                            the
+                                            importance of sustainability. So, it’s time that we concentrate on
+                                            sustainable
+                                            living.
+                                        </p>
+                                        <div class="video-container">
+                                            <iframe width="340" height="200"
+                                                src="https://www.youtube.com/embed/FbAjxkGvDNs" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="flip-up" data-aos-duration="2000">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Plastic free living for beginners
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                        <p> Chlorinated plastic can release harmful chemicals into the surrounding soil,
+                                            which
+                                            can then
+                                            seep into groundwater or other surrounding water sources, and also the
+                                            ecosystem.
+                                            This can
+                                            cause a range of potentially harmful effects on the species that drink the
+                                            water.
+                                        </p>
+                                        <div class="video-container">
+                                            <iframe width="340" height="200"
+                                                src="https://www.youtube.com/embed/_bX0Umisr8c" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="flip-up" data-aos-duration="2000">
+                                <h3 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        20 Ways to reduce waste
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                        <p> Here are 20 easy eco-friendly lifestyle hacks for reducing waste in your
+                                            home. These
+                                            green
+                                            tips and tricks will help you live a more green and minimalist lifestyle. A
+                                            lot of
+                                            people
+                                            think that making eco-friendly life changes are expensive and require
+                                            specialty
+                                            products.
+                                            The truth is there are easy and affordable swaps you can make. It is NOT
+                                            difficult
+                                            or
+                                            expensive to be eco friendly.</p>
+                                        <div class="video-container">
+                                            <iframe width="340" height="200"
+                                                src="https://www.youtube.com/embed/kXgELGBuMfA?start=68" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="flip-up" data-aos-duration="2000">
+                                <h3 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        8 Vegetables You Can Grow In Your Tiny Apartment All Year Round
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                        <p> Growing Your Own Vegetable is Not Only Fun but you’ll know What Exactly Went
+                                            into
+                                            the plants
+                                            at every stage which is not the case with store bought food. While growing
+                                            plants in
+                                            a busy
+                                            city and apartment might seem like an impossible-task, There are fruits and
+                                            veggies
+                                            you can
+                                            grow in pots that can sit pretty on a super small-porch, fire-escape, or
+                                            even in a
+                                            well-lit
+                                            indoor area. And, unlike traditional gardens, you won’t have to deal with
+                                            many
+                                            intrusive
+                                            weeds either!</p>
+                                        <div class="video-container">
+                                            <iframe width="340" height="200"
+                                                src="https://www.youtube.com/embed/nRaJ3taB07k" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="flip-up" data-aos-duration="2000">
+                                <h3 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        A Complete Guide to Digging & Planting Garden: Tomatoes, Peppers & Herbs
+                                    </button>
+                                </h3>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p> I thoroughly cover all the aspects of starting your first vegetable garden.
+                                            From
+                                            selecting
+                                            the right location & tracking the sun through planting, fertilizing,
+                                            staking,
+                                            watering
+                                            tomatoes and peppers. Plus I show you how to start cilantro, dill and basil
+                                            from
+                                            seed. This
+                                            is great video for first time gardeners. It is a complete guide to help you
+                                            join the
+                                            world
+                                            vegetable gardening.</p>
+                                    </div>
+                                    <div class="video-container">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KLtsTuc2Tuk"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="flip-up" data-aos-duration="2000">
+                                <h3 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Setting up Our Rain Barrel for FREE Water
+                                    </button>
+                                </h3>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                        <p> Water conservation is a big goal of ours this year. We are setting up a rain
+                                            barrel
+                                            to not
+                                            only save water but also cut costs with free water to irrigate the garden
+                                            with.</p>
+                                        <div class="video-container">
+                                            <iframe width="340" height="200"
+                                                src="https://www.youtube.com/embed/iYWCjRom4rs" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="flip-up" data-aos-duration="2000">
+                                <h3 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        12 Tips For Sustainable Travel
+                                    </button>
+                                </h3>
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                        <p> Travel is one of the best things in the world, yet some aspects of travel
+                                            aren't
+                                            sustainable
+                                            or are wasteful. This travel tips video shares 12 easy life hacks for
+                                            sustainable
+                                            travel.</p>
+                                        <div class="video-container">
+                                            <iframe width="340" height="200"
+                                                src="https://www.youtube.com/embed/OOS-vzg1X3o" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
-
                 </div>
             </div>
-        </div>
+        </section>
+        <!--SECTION MISSION ENDS-->
 
-    </section>
-    <!--SECTION FIVE ENDS-->
+        <!--BANNER-->
+        <section class="banner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 image-banner image-four">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--BANNER ENDS-->
 
-    <!--SECTION SIX IMAGE-->
-    <section class="sectionSix">
-        <div class="container-fluid ">
+
+        <!--SECTION NUCLEAR-->
+        <section class="nuclear nav-menu-item" id="nuclear">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h2>Should <span>We</span> Reconsider Nuclear Power?</h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/ciStnd9Y2ak" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--SECTION NUCLEAR ENDS-->
+    </main>
+
+    <footer>
+        <div class="container">
             <div class="row">
-                <div class="col-md-12 image-banner">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--SECTION SIX ENDS-->
-
-    <!--SECTION SEVEN-->
-    <section class="sectionSeven" id="sectionSeven">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-
-                <h2 class="display-3"> Start a Sustainable life style to help <span>your</span> planet ..</h2>
-                <div class="card">
-                    <div class="card-body">
-                       </b> </b><p class="card-text"> <b> What Is Sustainability and Why Is It Important?</b></p>
+                <div class="col-sm-12 col-md-6 order-md-1">
+                    <div class="footer-item">
+                        <img class="logo" src="./images/footer/footer-banner.png" alt="logo">
                     </div>
-                    <iframe class="full-screen-video" width="340" height="200" src="https://www.youtube.com/embed/FbAjxkGvDNs" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div class="card-body">
-                        <p class="card-text">Sustainability helps us to improve the quality of our lives and the
-                            diversity of life in our ecosystem. If we do not promote sustainability then we will soon
-                            run out of fossil fuels and many animals will become extinct. We will also damage our
-                            environment. We should practice sustainable living and encourage others to do the same as
-                            well. If necessary we should arrange community activities to make people aware of the
-                            importance of sustainability. So, it’s time that we concentrate on sustainable living.</p>
-
-                    </div>
-
                 </div>
 
-                <div class="accordion " id="accordionExample">
-
-                    <div class="card ">
-                        <div class="card-header" id="headingOne">
-
-                            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-                                <h3> Plastic free living for beginners</h3>
-                            </button>
-
+                <div class="col-sm-12 col-md-6">
+                    <div class="footer-item links">
+                        <div class="footer-item--title ">
+                            <h6>Useful links</h6>
                         </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                <iframe class="d-flex mr-3"  width="340" height="200"
-                                    src="https://www.youtube.com/embed/_bX0Umisr8c" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                                <p> Chlorinated plastic can release harmful chemicals into the surrounding soil, which
-                                    can then
-                                    seep into groundwater or other surrounding water sources, and also the ecosystem.
-                                    This can
-                                    cause a range of potentially harmful effects on the species that drink the water..
-                                </p>
-                            </div>
+                        <div class="footer-item--content d-flex flex-column">
+                            <a href="https://climate.nasa.gov/" target="_blank">NASA</a>
+                            <a href="https://www.wwf.org.uk/what-we-do/protecting-wildlife" target="_blank">WWF</a>
+                            <a href="https://www.rspca.org.uk/getinvolved/donate/online?campaigncode=19CIN1-254&dclid=&gclid=CjwKCAjwz6_8BRBkEiwA3p02Vb9mmbhREQKO2HvoTFoAFv80T6uC8U_If377WnGHchmTS4J3O7SbFBoC7_sQAvD_BwE"
+                                target="_blank">RSPCA</a>
+                            <a href="https://planetofthehumans.com/" target="_blank">Planet Of Humans</a>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-
-                            <button class="btn  collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <h3> 20 Ways to reduce waste</h3>
-                            </button>
-
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="footer-item links">
+                        <div class="footer-item--title">
+                            <h6>Reference</h6>
                         </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                <iframe width="340" height="200"
-                                    src="https://www.youtube.com/embed/kXgELGBuMfA?start=68" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                                <p> Here are 20 easy eco-friendly lifestyle hacks for reducing waste in your home. These
-                                    green
-                                    tips and tricks will help you live a more green and minimalist lifestyle. A lot of
-                                    people
-                                    think that making eco-friendly life changes are expensive and require specialty
-                                    products.
-                                    The truth is there are easy and affordable swaps you can make. It is NOT difficult
-                                    or
-                                    expensive to be eco friendly.</p>
-                            </div>
+                        <div class="footer-item--content d-flex flex-column">
+                            <a href="https://en.wikipedia.org/wiki/Planet_of_the_Humans"
+                                target="_blank">Planet_of_the_Humans-wiki</a>
+                            <a href="https://planetofthehumans.com/" target="_blank">Planet_of_the_Humans-official</a>
+                            <a href="https://www.imdb.com/title/tt12192654/"
+                                target="_blank">Planet_of_the_Humans-imbd</a>
+                            <a href="https://www.youtube.com/watch?v=Zk11vI-7czE&t=5322s"
+                                target="_blank">Planet_of_the_Humans-documentry</a>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-
-                            <button class="btn  collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <h3> 8 Vegetables You Can Grow In Your Tiny Apartment All Year Round
-
-                                </h3>
-                            </button>
-
+                </div>
+                <div class="col-sm-12 col-md-6 order-md-2">
+                    <div class="footer-item">
+                        <div class="footer-item--title">
+                            <h6>Connect</h6>
                         </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                <iframe width="340" height="200" src="https://www.youtube.com/embed/nRaJ3taB07k"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-
-                                <p> Growing Your Own Vegetable is Not Only Fun but you’ll know What Exactly Went into
-                                    the plants
-                                    at every stage which is not the case with store bought food. While growing plants in
-                                    a busy
-                                    city and apartment might seem like an impossible-task, There are fruits and veggies
-                                    you can
-                                    grow in pots that can sit pretty on a super small-porch, fire-escape, or even in a
-                                    well-lit
-                                    indoor area. And, unlike traditional gardens, you won’t have to deal with many
-                                    intrusive
-                                    weeds either!</p>
+                        <div class="footer-item--content d-flex justify-content-center">
+                            <div class="">
+                                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
                             </div>
-                        </div>
-                    </div>
-                 
-
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-
-                            <button class="btn  collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                <h3>A Complete Guide to Digging & Planting Your First Vegetable Garden: Tomatoes, Peppers & Herbs</h3>
-                            </button>
-
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                <iframe width="340" height="200" src="https://www.youtube.com/embed/KLtsTuc2Tuk"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                                <p> I thoroughly cover all the aspects of starting your first vegetable garden. From
-                                    selecting
-                                    the right location & tracking the sun through planting, fertilizing, staking,
-                                    watering
-                                    tomatoes and peppers. Plus I show you how to start cilantro, dill and basil from
-                                    seed. This
-                                    is great video for first time gardeners. It is a complete guide to help you join the
-                                    world
-                                    vegetable gardening.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-
-                            <button class="btn  collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                <h3> Setting up Our Rain Barrel for FREE Water. </h3>
-                            </button>
-
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                <iframe width="340" height="200" src="https://www.youtube.com/embed/iYWCjRom4rs"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                                <p> Water conservation is a big goal of ours this year. We are setting up a rain barrel
-                                    to not
-                                    only save water but also cut costs with free water to irrigate the garden with.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header" id="headingSix">
-
-                            <button class="btn  collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                <h3> 12 Tips For Sustainable Travel</h3>
-                            </button>
-
-                        </div>
-                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                <iframe width="340" height="200" src="https://www.youtube.com/embed/OOS-vzg1X3o"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-
-                                <p> Travel is one of the best things in the world, yet some aspects of travel aren't
-                                    sustainable
-                                    or are wasteful. This travel tips video shares 12 easy life hacks for sustainable
-                                    travel.</p>
+                            <div class="">
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    </section>
-    <!--SECTION SEVEN ENDS-->
-
-    <!--SECTION EIGHT IMAGE-->
-    <section class="sectionEight">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 image-banner">
-            </div>
-        </div>
-    </div>
-    </div>
-    </section>
-    <!--SECTION EIGHT ENDS-->
-
-
-    <!--SECTION NINE-->
-    <section class="sectionNine" id="sectionNine">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="display-3">Should <span>We</span> Reconsider Nuclear Power?</h2>
-
-                <div class="card">
-                    <iframe class="full-screen-video"  src="https://www.youtube.com/embed/ciStnd9Y2ak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
+        <div class="container-fluid">
+            <div class="row border-top">
+                <div class="col-md-12">
+                    <div class="web-rights flex-row justify-content-center">
+                        Copyright © 2021 Paul C Inc. All Rights Reserved
                     </div>
+                </div>
             </div>
         </div>
-    </div>
-    </section>
-    <!--SECTION NINE ENDS-->
-</main>
 
-<footer >
-    <div class="container-fluid">
-        <div class="row">
-
-    <div class="col-md-4">
-        <img src="./images/footer/footer-banner.png" alt="">
-    </div>
-    <div class="col-md-4">
-        <ul>
-            <h6>Useful links</h6>
-            <li><a href="https://climate.nasa.gov/" target="_blank" >NASA</a></li>
-            <li><a href="https://www.wwf.org.uk/what-we-do/protecting-wildlife" target="_blank">WWF</a></li>
-            <li><a href="https://www.rspca.org.uk/getinvolved/donate/online?campaigncode=19CIN1-254&dclid=&gclid=CjwKCAjwz6_8BRBkEiwA3p02Vb9mmbhREQKO2HvoTFoAFv80T6uC8U_If377WnGHchmTS4J3O7SbFBoC7_sQAvD_BwE" target="_blank">RSPCA</a></li>
-            <li><a href="https://planetofthehumans.com/" target="_blank">Planet Of Humans</a></li>
-        </ul>
-    </div>
-    <div class="col-md-4">
-        <ul>
-            <h6>Reference</h6>
-            <li><a href="https://en.wikipedia.org/wiki/Planet_of_the_Humans" target="_blank">Planet_of_the_Humans-wiki</a></li>
-            <li><a href="https://planetofthehumans.com/" target="_blank">Planet_of_the_Humans-official</a></li>
-            <li><a href="https://www.imdb.com/title/tt12192654/" target="_blank">Planet_of_the_Humans-imbd</a></li>
-            <li><a href="https://www.youtube.com/watch?v=Zk11vI-7czE&t=5322s" target="_blank">Planet_of_the_Humans-documentry</a></li>
-        </ul>
-    </div>
-            </div>
-            </div>
-
-</footer>
+    </footer>
 
 
 
@@ -690,9 +879,13 @@
     <script src="./js/smooth-scroll.js"></script>
     <script src="./js/onscroll-fixed.js"></script>
     <script src="./js/active-list-item.js"></script>
+   
     <script src="./js/slideIn.js"></script>
-    <script src="./js/onscroll-visible.js"></script>
-    
+    <script>
+        AOS.init();
+      </script>
+    <!--<script src="./js/onscroll-visible.js"></script>-->
+
 
 </body>
 

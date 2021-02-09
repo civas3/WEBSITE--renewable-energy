@@ -23,65 +23,78 @@ You can also shorthand most properties for faster coding. Here are a couple I us
 */
 
 //on-scroll-fixed
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+/*.sticky {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 1000;
+}*/
 
 //NAV
-.active{
-    background-color: $primary-gray !important;
-    color: $black !important;
-    text-shadow: $white 0.1rem 0.1rem;
-    @include respond(b-phone) {
-        background-color: $black;
-      }
-}  
-
-//image-banner
-.image-banner{
-    height: 40vh;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;     
-    @include respond(b-phone) {
-        height: 60vh;
-    } 
+.active {
+   background-color: $primary-purple !important;
+  //color: $black !important;
+  text-shadow: $white 0.1rem 0.1rem;
+  
 }
 
-//responsive-video{
-    .full-screen-video{
-        width: 100% !important;
-        min-height: 50rem;
-        @include respond(tab-land) {
-            min-height: 30rem;
-          }
-        height: auto !important;
+.wd-80{
+  width: 100%;
+  @include respond(tab-port) {
+    width: 80%;
+  }
 
-        
+
+}
+
+
+
+//responsive-video{
+  .video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    &::after {
+        padding-top: 56.25%;
+        display: block;
+        content: '';
     }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
 
 //responsive-image{
-    .full-screen-image{
-        width: 100% !important;
-        height: auto !important;
-       
-    }
+.full-screen-image {
+  height: auto !important;
+  width: 100% !important;
+  @include respond(tab-land) {
+    width: auto !important;
+    height: 100% !important;
+  }
+  
+}
 
-    .full-screen-image-verticale{
-        height: 100% !important;
-        width: auto !important;
-        max-width: 30rem;
 
-    }
-    
+
 //flex-direction-reverse
-.flex-reverse-column{
-    @include respond(b-phone) {
-        flex-direction: column-reverse;
-      }
+.flex-reverse-column {
+  @include respond(b-phone) {
+    flex-direction: column-reverse;
+  }
+}
 
+.p-intro::first-letter{
+  font-size: 10rem;
+  display: block;
+  float: left;
+  line-height: 0.5;
+  margin: 1.5rem 1.5rem 1rem 0;
 }
 

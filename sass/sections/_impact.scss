@@ -1,0 +1,91 @@
+//SECTION IMPACT
+#impact {
+  .card {
+    margin-bottom: 10rem !important;
+    border-left: none;
+    border-right: none;
+  }
+ 
+  .card-title {
+    padding-bottom: 1rem;
+  }
+
+  .d-inline-block {
+    background-color: #e9d2c0c9;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  }
+
+  .impact-bg-1 {
+    background-image: url("../images/section-impact/four.jpg"); /* The image used */
+    -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    @include respond(tab-port) {
+      -webkit-box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+    }
+  }
+  .impact-bg-2 {
+    background-image: url("../images/section-impact/two.jpg"); /* The image used */
+    -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    @include respond(tab-port) {
+      -webkit-box-shadow: -17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      box-shadow: -17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+    }
+  }
+  .impact-bg-3 {
+    background-image: url("../images/section-impact/three.jpg"); /* The image used */
+    -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    @include respond(tab-port) {
+      -webkit-box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+    }
+  }
+  .impact-bg-4 {
+    background-image: url("../images/section-impact/five.jpg"); /* The image used */
+    -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    @include respond(tab-port) {
+      -webkit-box-shadow: -17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      box-shadow: -17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+    }
+  }
+  .impact-bg-5 {
+    background-image: url("../images/section-impact/six.jpg"); /* The image used */
+    -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    @include respond(tab-port) {
+      -webkit-box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+    }
+  }
+  .impact-bg-1,
+  .impact-bg-2,
+  .impact-bg-3,
+  .impact-bg-4,
+  .impact-bg-5,
+  .impact-bg-6 {
+    height: 30rem; /* You must set a specified height */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    align-self: center;
+    margin: 2rem 0;
+  }
+}
+//SECTION IMPACT ENDS

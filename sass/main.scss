@@ -17,8 +17,14 @@
 @import "layout/grid";
 @import "layout/footer";
 
-/*pages*/
-@import "pages/index";
+/*SECTIONS*/
+@import "sections/hero";
+@import "sections/banners";
+@import "sections/introduction";
+@import "sections/impact";
+@import "sections/cause";
+@import "sections/mission";
+@import "sections/nuclear";
 
 // Custom.scss
 // Option A: Include all of Bootstrap

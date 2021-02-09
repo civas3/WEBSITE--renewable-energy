@@ -1,3 +1,63 @@
 
  
   
+//NAV 
+#nav{  
+  background-color: $primary-green !important;
+  -webkit-box-shadow: -1px 9px 18px -11px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 9px 18px -11px rgba(0,0,0,0.75);
+  box-shadow: -1px 9px 18px -11px rgba(0,0,0,0.75);  
+  .logo{   
+    h1{
+      span{
+        padding: 0 0.3rem; 
+      }
+    }  
+  }
+
+  .navbar-nav{
+    background-color: $primary-green;
+    transition: width 2s;
+    @include respond(tab-land) {
+     justify-content: space-evenly;
+     align-items: center;
+    }
+    @include respond(medium-desktop) {
+      -webkit-box-shadow: 0px 15px 18px -7px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 15px 18px -7px rgba(0,0,0,0.75);
+      box-shadow: 0px 15px 18px -7px rgba(0,0,0,0.75);
+     }
+
+  }
+
+
+ 
+
+  .nav-link{
+    padding: 2rem 0;
+    border-top: $primary-purple solid 0.1rem;
+    @include respond(tab-land) {
+      margin-bottom: 0;
+      padding: 2rem 2rem;
+      border-top: none;
+      @include respond(medium-desktop) {
+        padding: 1rem 2.5rem;
+        &:hover{
+          background-color: $primary-purple;
+        }
+       }
+      
+    }
+    &:first-child{
+      margin-top: 2rem;
+      @include respond(tab-land) {
+        margin-top: 0;
+      }
+    }
+   
+    
+  }
+
+  
+  }
+//NAV ENDS

@@ -1,0 +1,24 @@
+//BANNERS
+.image-banner {
+    height: 40vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include respond(b-phone) {
+      height: 60vh;
+    }
+  }
+
+.image-one{
+    background-image: url(../images/banner/clearcut-forest.jpg) ;
+}
+.image-two{
+    background-image: url(../images/banner/never.jpg) ;
+}
+.image-three{        
+    background-image: url(../images/banner/pray.jpg) ;
+}
+.image-four{        
+    background-image: url(../images/banner/chopped-forest.jpg) ;
+}

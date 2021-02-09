@@ -1,0 +1,80 @@
+
+
+//footer
+footer{
+    background-color: $primary-green;
+    padding: 5rem 0 1rem 0;
+    border-top: solid 0.1rem $primary-purple;
+    .logo{
+        width: 100%;
+        text-align: center;
+        @include respond(tab-port) {
+            width: 80%;
+          }
+    }
+    .footer-item{
+        margin-bottom: 5rem;
+        @include respond(tab-port) {
+            margin-top: 3rem;
+          }
+
+        &--title{
+            text-align: center;
+            padding-bottom: 1rem;
+        }  
+
+        &--content{ 
+            @include respond(medium-desktop) {
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+              } 
+            a{
+                padding: 0 2rem;
+                @include respond(medium-desktop) {
+                    width: 60%;
+                  } 
+            }  
+        }
+    }
+        .links{
+            a:hover{
+                background-color: $primary-purple;
+            }
+        }
+    
+
+    .fa-facebook-official{
+        color: blue;
+        &:hover{
+            color: darken($color: blue, $amount: 20%);
+            
+        }
+        
+    }
+    .fa-pinterest{
+        color: red;
+        &:hover{
+            color: darken($color: red, $amount: 20%);
+        }
+    }
+    .fa-twitter{
+        color: lightblue;
+        &:hover{
+            color: darken($color: lightblue, $amount: 20%);
+        }
+    }
+    .fa-instagram{
+        color: lightcoral;
+        &:hover{
+            color: darken($color: lightcoral, $amount: 20%);
+        }
+    }
+
+    .web-rights{
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+//footer ENDS
+

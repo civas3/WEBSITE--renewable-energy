@@ -1,27 +1,5 @@
 @charset "UTF-8";
 /*abstracts*/
-/*Functions allow you to define complex operations on SassScript values that you can re-use throughout 
-your stylesheet. They make it easy to abstract out common formulas and behaviors in a readable way.
-
-Functions are defined using the @function at-rule, which is written:
- @function <name>(<arguments...>) { ... }. A function’s name can be any Sass identifier. 
- It can only contain universal statements, as well as the @return at-rule which indicates the 
- value to use as the result of the function call. Functions are called using the normal CSS 
- function syntax.
-
-SCSS SYNTAX
-@function pow($base, $exponent) {
-  $result: 1;
-  @for $_ from 1 through $exponent {
-    $result: $result * $base;
-  }
-  @return $result;
-}
-
-.sidebar {
-  float: left;
-  margin-left: pow(4, 3) * 1px;
-}*/
 /*
 0 - 320px:      Smaller mobile phones
 320 - 360px:    Medium mobile phones
@@ -74,88 +52,20 @@ ORDER: Base + typography > general layout + grid > page layout > components
     left: 0px;
     top: 0px; } }
 
-@keyframes arrow {
-  0% {
-    top: 40%; }
-  25% {
-    top: 42.5%; }
-  50% {
-    top: 40%; }
-  75% {
-    top: 42.5%; }
-  100% {
-    top: 40%; } }
-
-@keyframes arrowDown-itemOne {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 0.2;
-    background-color: #417B5A; } }
-
-@keyframes arrowDown-itemTwo {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 0.3;
-    background-color: #417B5A; } }
-
-@keyframes arrowDown-itemThree {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 0.4;
-    background-color: #417B5A; } }
-
-@keyframes arrowDown-itemFour {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 0.5;
-    background-color: #417B5A; } }
-
-@keyframes arrowDown-itemFive {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 0.8;
-    border-top: 5rem solid #417B5A; } }
-
-@keyframes heroButton {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1;
-    background-color: #417B5A; } }
-
-.sectionOne .come-in {
+.come-in {
   transform: translateY(150px);
-  animation: come-in 1s ease forwards; }
+  animation: come-in 1.7s ease forwards; }
 
-.sectionOne .come-in:nth-child(odd) {
-  animation-duration: 0.8s; }
+.come-in:nth-child(odd) {
+  animation-duration: 1.7s; }
 
-.sectionOne .already-visible {
+.already-visible {
   transform: translateY(0);
   animation: none; }
 
 @keyframes come-in {
   to {
     transform: translateY(0); } }
-
-.hide-image {
-  visibility: hidden; }
-
-.fadeIn {
-  -webkit-animation: show-image 0.8s;
-  animation: show-image 0.8s;
-  visibility: visible !important; }
-
-@-webkit-keyframes show-image {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 *,
 *::after,
@@ -168,17 +78,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif; }
-  @media only screen and (max-width: 20em) {
-    html {
-      font-size: 37.5%; } }
-  @media only screen and (max-width: 64em) {
-    html {
-      font-size: 56.25%; } }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
   html body {
     box-sizing: border-box; }
+    html body a {
+      text-decoration: none !important; }
+    html body p, html body span {
+      padding-bottom: 1rem; }
+    html body section:not(:first-child) {
+      margin-top: 25rem;
+      margin-bottom: 25rem; }
+    html body .section-title {
+      padding-bottom: 7rem; }
 
 /*“Web typography” refers to the appearance of all the text on your website. It includes basic 
 CSS text properties like what font to use and whether it should be italic or not, but typography 
@@ -188,112 +98,144 @@ the size of different runs of text in relation to one another, and the history b
 https://www.internetingishard.com/html-and-css/web-typography/
 */
 /* !!!!___ Use % rather than px for all layout-related lenghts (including pictures) ___!!!! */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'IM Fell English', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IM Fell English", serif;
   text-transform: uppercase; }
 
 p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7rem;
   font-weight: 400;
-  padding-bottom: 1rem; }
-
-h2 {
-  text-align: center; }
-  @media only screen and (max-width: 30em) {
-    h2 {
-      font-size: 3rem !important; } }
-  h2:nth-child(2) {
-    color: red !important; }
+  letter-spacing: 0.2rem; }
 
 span {
-  font-size: 150%;
-  font-weight: bold; }
+  font-size: 150%; }
 
-nav ul li a {
+.section-title h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  text-shadow: #417B5A 0.1rem 0.1rem; }
+  @media only screen and (min-width: 48em) {
+    .section-title h2 {
+      font-size: 2.6rem; } }
+  @media only screen and (min-width: 75em) {
+    .section-title h2 {
+      font-size: 3.6rem; } }
+
+#nav .logo h1 {
+  font-size: 3rem !important;
+  letter-spacing: 0.2rem;
+  color: #000;
+  text-shadow: white 0.2rem 0.2rem; }
+  #nav .logo h1 span {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: none;
+    text-shadow: black 0.2rem 0.2rem; }
+
+#nav .nav-link {
   color: #ffffff;
-  font-size: 2rem;
+  text-shadow: #000 0.1rem 0.1rem;
+  font-size: 2.3rem;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: #000 0.1rem 0.1rem; }
-  @media only screen and (max-width: 64em) {
-    nav ul li a {
+  text-align: center;
+  letter-spacing: 0.1rem; }
+  #nav .nav-link:hover {
+    text-shadow: #000 0.2rem 0.2rem; }
+  @media only screen and (min-width: 64em) {
+    #nav .nav-link {
       font-size: 1.8rem; } }
-  nav ul li a:hover {
-    color: #E9D2C0; }
 
-.hero-section .carousel-caption p {
-  font-size: 5rem;
+#hero .carousel-caption p, #hero .carousel-caption span {
+  font-size: 2rem;
   text-transform: capitalize;
-  text-shadow: #000 0.6rem 0.6rem;
-  font-weight: bold; }
-  @media only screen and (max-width: 30em) {
-    .hero-section .carousel-caption p {
-      font-size: 3.5rem; } }
-  @media only screen and (max-width: 20em) {
-    .hero-section .carousel-caption p {
-      font-size: 3rem; } }
+  font-weight: 600;
+  text-shadow: red -0.1rem -0.1rem; }
+  @media only screen and (min-width: 48em) {
+    #hero .carousel-caption p, #hero .carousel-caption span {
+      font-size: 3.2rem;
+      line-height: 6rem; } }
 
-.hero-section .carousel-item:nth-child(5) a {
-  font-size: 2.5rem;
+#introduction {
+  word-spacing: 0.5rem; }
+
+#impact .card-title {
+  font-size: 2rem !important; }
+
+#impact p {
+  padding-bottom: 1.5rem;
+  letter-spacing: 0.2rem; }
+
+#impact .text-muted {
+  color: black !important; }
+
+#cause h3 {
+  font-size: 2rem; }
+
+#cause span {
   font-weight: bold;
+  display: inline-block;
+  margin-bottom: 1rem; }
+
+#cause .section-content {
+  letter-spacing: 0.2rem; }
+  #cause .section-content span {
+    font-size: 1.6rem; }
+
+#cause .modal-button {
+  font-size: 2rem !important;
+  font-weight: bold;
+  text-transform: uppercase;
   text-shadow: black 0.2rem 0.2rem;
-  color: #E9D2C0; }
-  @media only screen and (max-width: 20em) {
-    .hero-section .carousel-item:nth-child(5) a {
-      font-size: 2rem; } }
+  letter-spacing: 0.1rem; }
+  #cause .modal-button:hover {
+    background-color: #417B5A; }
+  @media only screen and (min-width: 48em) {
+    #cause .modal-button {
+      font-size: 1.8rem !important; } }
 
-.sectionOne .container .row {
-  word-spacing: 0.5rem; }
-  .sectionOne .container .row span {
-    font-weight: normal; }
-
-.sectionThree .container .row {
-  word-spacing: 0.5rem; }
-
-.sectionFive {
-  margin: 25rem 0; }
-  .sectionFive .analogy span {
-    font-size: 210%; }
-  .sectionFive .lead {
-    text-align: center; }
-    .sectionFive .lead button {
-      font-size: 180%;
-      font-weight: bold;
-      text-transform: uppercase;
-      text-shadow: #000 0.1rem 0.1rem; }
-      .sectionFive .lead button:hover {
-        color: black;
-        text-shadow: #ffffff 0.1rem 0.1rem; }
-
-.sectionSeven .card-text {
-  text-align: center; }
-
-.sectionSeven #accordionExample .card-header button h3 {
-  color: #ffffff !important;
-  text-shadow: black 0.1rem 0.1rem;
-  font-size: 200%;
+#mission .accordion-item .accordion-button {
+  text-transform: capitalize;
   letter-spacing: 0.1rem;
-  word-spacing: 0.5rem;
-  text-align: left; }
+  text-transform: uppercase;
+  font-weight: bold; }
+
+#mission .accordion-item .accordion-header {
+  font-size: 2rem; }
+
+#mission .accordion-item .accordion-body {
+  letter-spacing: 0.2rem; }
+  @media only screen and (min-width: 75em) {
+    #mission .accordion-item .accordion-body {
+      font-size: 2.2rem; } }
 
 footer {
-  color: #ffffff; }
-  footer ul h6 {
-    font-size: 190%;
+  color: #000; }
+  footer .footer-item--title h6 {
+    font-size: 2.2rem !important;
+    color: #000;
     font-weight: bold;
-    letter-spacing: 0.2rem;
-    text-shadow: black 0.1rem 0.1rem; }
-    footer ul h6:after {
-      content: '';
-      color: #4B3F72; }
-  footer ul li a {
-    text-decoration: none;
+    text-shadow: #b1aaaa 0.1rem 0.1rem;
+    letter-spacing: 0.3rem; }
+  footer .footer-item--content a {
     color: #ffffff;
-    font-size: 150%; }
-    footer ul li a:hover {
-      color: #E9D2C0;
-      text-decoration: none; }
+    font-size: 1.6rem;
+    line-height: 4rem; }
+    @media only screen and (min-width: 48em) {
+      footer .footer-item--content a {
+        line-height: 3rem; } }
+  footer .footer-item--content i {
+    font-size: 3.5rem; }
+  footer .web-rights {
+    margin-top: 2rem;
+    text-align: center;
+    color: yellow; }
 
 /*Utility classes are meant to do only one thing, and do it well. They are designed to be simple,
  composable and re-usable, allowing for easy and fast development. While a CSS system based on utility 
@@ -318,18 +260,164 @@ You can also shorthand most properties for faster coding. Here are a couple I us
 *v/h for vertical/horizontal
 *bg for background
 */
-.sticky {
+/*.sticky {
   position: fixed;
-  top: 0;
-  width: 100%; }
-
+  top: 0%;
+  width: 100%;
+  z-index: 1000;
+}*/
 .active {
-  background-color: #D0CEBA !important;
-  color: #000 !important;
+  background-color: #4B3F72 !important;
   text-shadow: #ffffff 0.1rem 0.1rem; }
-  @media only screen and (max-width: 30em) {
-    .active {
-      background-color: #000; } }
+
+.wd-80 {
+  width: 100%; }
+  @media only screen and (min-width: 48em) {
+    .wd-80 {
+      width: 80%; } }
+
+.video-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+  .video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: ''; }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.full-screen-image {
+  height: auto !important;
+  width: 100% !important; }
+  @media only screen and (min-width: 64em) {
+    .full-screen-image {
+      width: auto !important;
+      height: 100% !important; } }
+
+@media only screen and (min-width: 30em) {
+  .flex-reverse-column {
+    flex-direction: column-reverse; } }
+
+.p-intro::first-letter {
+  font-size: 10rem;
+  display: block;
+  float: left;
+  line-height: 0.5;
+  margin: 1.5rem 1.5rem 1rem 0; }
+
+/*components*/
+/*layout*/
+#nav {
+  background-color: #417B5A !important;
+  -webkit-box-shadow: -1px 9px 18px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 9px 18px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 9px 18px -11px rgba(0, 0, 0, 0.75); }
+  #nav .logo h1 span {
+    padding: 0 0.3rem; }
+  #nav .navbar-nav {
+    background-color: #417B5A;
+    transition: width 2s; }
+    @media only screen and (min-width: 64em) {
+      #nav .navbar-nav {
+        justify-content: space-evenly;
+        align-items: center; } }
+    @media only screen and (min-width: 75em) {
+      #nav .navbar-nav {
+        -webkit-box-shadow: 0px 15px 18px -7px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 15px 18px -7px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 15px 18px -7px rgba(0, 0, 0, 0.75); } }
+  #nav .nav-link {
+    padding: 2rem 0;
+    border-top: #4B3F72 solid 0.1rem; }
+    @media only screen and (min-width: 64em) {
+      #nav .nav-link {
+        margin-bottom: 0;
+        padding: 2rem 2rem;
+        border-top: none; } }
+  @media only screen and (min-width: 64em) and (min-width: 75em) {
+    #nav .nav-link {
+      padding: 1rem 2.5rem; }
+      #nav .nav-link:hover {
+        background-color: #4B3F72; } }
+    #nav .nav-link:first-child {
+      margin-top: 2rem; }
+      @media only screen and (min-width: 64em) {
+        #nav .nav-link:first-child {
+          margin-top: 0; } }
+
+footer {
+  background-color: #417B5A;
+  padding: 5rem 0 1rem 0;
+  border-top: solid 0.1rem #4B3F72; }
+  footer .logo {
+    width: 100%;
+    text-align: center; }
+    @media only screen and (min-width: 48em) {
+      footer .logo {
+        width: 80%; } }
+  footer .footer-item {
+    margin-bottom: 5rem; }
+    @media only screen and (min-width: 48em) {
+      footer .footer-item {
+        margin-top: 3rem; } }
+    footer .footer-item--title {
+      text-align: center;
+      padding-bottom: 1rem; }
+    @media only screen and (min-width: 75em) {
+      footer .footer-item--content {
+        justify-content: center;
+        align-items: center;
+        align-content: center; } }
+    footer .footer-item--content a {
+      padding: 0 2rem; }
+      @media only screen and (min-width: 75em) {
+        footer .footer-item--content a {
+          width: 60%; } }
+  footer .links a:hover {
+    background-color: #4B3F72; }
+  footer .fa-facebook-official {
+    color: blue; }
+    footer .fa-facebook-official:hover {
+      color: #000099; }
+  footer .fa-pinterest {
+    color: red; }
+    footer .fa-pinterest:hover {
+      color: #990000; }
+  footer .fa-twitter {
+    color: lightblue; }
+    footer .fa-twitter:hover {
+      color: #5fb3ce; }
+  footer .fa-instagram {
+    color: lightcoral; }
+    footer .fa-instagram:hover {
+      color: #e52525; }
+  footer .web-rights {
+    margin-top: 2rem;
+    text-align: center; }
+
+/*SECTIONS*/
+#hero {
+  background-color: black; }
+  #hero .carousel-item {
+    height: 100vh;
+    background-color: black !important; }
+  #hero .carousel-caption {
+    bottom: 10%;
+    left: 50%;
+    line-height: 3rem;
+    width: 80vw;
+    transform: translate(-50%, -10%); }
+    @media only screen and (min-width: 75em) {
+      #hero .carousel-caption {
+        width: 40vw;
+        left: 10%;
+        top: 35%;
+        transform: translate(-10%, -30%); } }
 
 .image-banner {
   height: 40vh;
@@ -337,262 +425,167 @@ You can also shorthand most properties for faster coding. Here are a couple I us
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain; }
-  @media only screen and (max-width: 30em) {
+  @media only screen and (min-width: 30em) {
     .image-banner {
       height: 60vh; } }
 
-.full-screen-video {
-  width: 100% !important;
-  min-height: 50rem;
-  height: auto !important; }
-  @media only screen and (max-width: 64em) {
-    .full-screen-video {
-      min-height: 30rem; } }
+.image-one {
+  background-image: url(../images/banner/clearcut-forest.jpg); }
 
-.full-screen-image {
-  width: 100% !important;
-  height: auto !important; }
+.image-two {
+  background-image: url(../images/banner/never.jpg); }
 
-.full-screen-image-verticale {
-  height: 100% !important;
-  width: auto !important;
-  max-width: 30rem; }
+.image-three {
+  background-image: url(../images/banner/pray.jpg); }
 
-@media only screen and (max-width: 30em) {
-  .flex-reverse-column {
-    flex-direction: column-reverse; } }
+.image-four {
+  background-image: url(../images/banner/chopped-forest.jpg); }
 
-/*components*/
-/*layout*/
-/*pages*/
-nav {
-  z-index: 999;
+#introduction .row {
+  margin-bottom: 20rem; }
+
+#introduction .section-image {
+  padding-bottom: 1rem; }
+
+#impact .card {
+  margin-bottom: 10rem !important;
+  border-left: none;
+  border-right: none; }
+
+#impact .card-title {
+  padding-bottom: 1rem; }
+
+#impact .d-inline-block {
+  background-color: #e9d2c0c9;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75); }
+
+#impact .impact-bg-1 {
+  background-image: url("../images/section-impact/four.jpg");
+  /* The image used */
+  -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75); }
+  @media only screen and (min-width: 48em) {
+    #impact .impact-bg-1 {
+      -webkit-box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75); } }
+
+#impact .impact-bg-2 {
+  background-image: url("../images/section-impact/two.jpg");
+  /* The image used */
+  -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75); }
+  @media only screen and (min-width: 48em) {
+    #impact .impact-bg-2 {
+      -webkit-box-shadow: -17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      box-shadow: -17px 14px 27px -9px rgba(0, 0, 0, 0.75); } }
+
+#impact .impact-bg-3 {
+  background-image: url("../images/section-impact/three.jpg");
+  /* The image used */
+  -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75); }
+  @media only screen and (min-width: 48em) {
+    #impact .impact-bg-3 {
+      -webkit-box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75); } }
+
+#impact .impact-bg-4 {
+  background-image: url("../images/section-impact/five.jpg");
+  /* The image used */
+  -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75); }
+  @media only screen and (min-width: 48em) {
+    #impact .impact-bg-4 {
+      -webkit-box-shadow: -17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      box-shadow: -17px 14px 27px -9px rgba(0, 0, 0, 0.75); } }
+
+#impact .impact-bg-5 {
+  background-image: url("../images/section-impact/six.jpg");
+  /* The image used */
+  -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75); }
+  @media only screen and (min-width: 48em) {
+    #impact .impact-bg-5 {
+      -webkit-box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75);
+      box-shadow: 17px 14px 27px -9px rgba(0, 0, 0, 0.75); } }
+
+#impact .impact-bg-1,
+#impact .impact-bg-2,
+#impact .impact-bg-3,
+#impact .impact-bg-4,
+#impact .impact-bg-5,
+#impact .impact-bg-6 {
+  height: 30rem;
+  /* You must set a specified height */
+  background-position: center center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  align-self: center;
+  margin: 2rem 0; }
+
+#cause .modal-button {
+  background-color: #4B3F72;
+  margin-top: 1rem;
+  padding: 0.7rem 1.6rem !important;
+  -webkit-box-shadow: -1px 2px 26px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 26px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 2px 26px 0px rgba(0, 0, 0, 0.75);
+  border: none; }
+  @media only screen and (min-width: 48em) {
+    #cause .modal-button {
+      display: block;
+      margin: 2rem auto; } }
+
+#cause .modal-content {
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   justify-content: center;
-  background-color: #417B5A;
-  margin-bottom: 10rem;
-  padding: 0.5rem 0;
-  border-bottom: solid 0.1rem #4B3F72; }
-  nav ul li {
-    margin: 0 1rem;
-    padding: 0 1.2rem; }
-    @media only screen and (max-width: 30em) {
-      nav ul li {
-        padding: 0 0.2rem; } }
-    nav ul li a:hover {
-      animation: ease-in;
-      transition-delay: 0.1s; }
+  margin-top: 20vh; }
+  @media only screen and (min-width: 30em) {
+    #cause .modal-content .youtube-video {
+      width: 100%;
+      min-height: 25rem;
+      height: auto; } }
 
-.hero-section .carousel-caption {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 80vw; }
-  @media only screen and (max-width: 30em) {
-    .hero-section .carousel-caption {
-      top: 35%;
-      width: 90vw; }
-      .hero-section .carousel-caption p:first-child {
-        margin-bottom: 37rem; } }
-    @media only screen and (max-width: 30em) and (max-width: 20em) {
-      .hero-section .carousel-caption p:first-child {
-        margin-bottom: 25rem; } }
+#mission .accordion-item {
+  -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+  margin-bottom: 8rem; }
+  #mission .accordion-item .accordion-button {
+    width: 100%;
+    padding: 5rem 1rem;
+    background-color: #e9d2c0c9;
+    border: none; }
+  #mission .accordion-item .accordion-body {
+    padding: 0 1rem 1rem 1rem;
+    margin-bottom: 10rem; }
+    #mission .accordion-item .accordion-body p {
+      padding: 2.5rem 1.3rem; }
 
-@media only screen and (max-width: 30em) {
-  .hero-section .carousel-item {
-    height: 100vh;
-    background-color: #000 !important; }
-    .hero-section .carousel-item img {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%); } }
-
-.hero-section .carousel-item:nth-child(5) .arrow-down {
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -40%);
-  text-align: center;
-  animation-name: arrow;
-  animation-duration: 2s;
-  animation-delay: 4s; }
-  .hero-section .carousel-item:nth-child(5) .arrow-down div {
-    width: 2rem;
-    height: 5rem;
-    border: red solid 0.1rem;
-    margin: 1rem auto;
-    transition-property: opacity, background;
-    animation-fill-mode: forwards;
-    animation-duration: 1.3s;
-    opacity: 0; }
-    .hero-section .carousel-item:nth-child(5) .arrow-down div:first-child {
-      animation-delay: 1s;
-      animation-name: arrowDown-itemOne; }
-    .hero-section .carousel-item:nth-child(5) .arrow-down div:nth-child(2) {
-      animation-delay: 1.3s;
-      animation-name: arrowDown-itemTwo; }
-    .hero-section .carousel-item:nth-child(5) .arrow-down div:nth-child(3) {
-      animation-delay: 1.6s;
-      animation-name: arrowDown-itemThree; }
-    .hero-section .carousel-item:nth-child(5) .arrow-down div:nth-child(4) {
-      animation-delay: 1.9s;
-      animation-name: arrowDown-itemFour; }
-    .hero-section .carousel-item:nth-child(5) .arrow-down div:nth-child(5) {
-      width: 0;
-      height: 0;
-      border: none;
-      border-left: 2.5rem solid transparent;
-      border-right: 2.5rem solid transparent;
-      animation-delay: 2.2s;
-      animation-name: arrowDown-itemFive; }
-
-.hero-section .carousel-item:nth-child(5) a {
-  display: inline-block;
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1rem 2rem;
-  border-radius: 3rem !important;
-  border: red solid 0.1rem;
-  opacity: 0;
-  animation-name: heroButton;
-  animation-delay: 2.8s;
-  animation-fill-mode: forwards;
-  transition-property: transform;
-  transition-duration: 2s; }
-  @media only screen and (max-width: 20em) {
-    .hero-section .carousel-item:nth-child(5) a {
-      bottom: 10%; } }
-  .hero-section .carousel-item:nth-child(5) a:hover {
-    transform: translate(-50%, -50%) rotateY(180deg); }
-
-.sectionOne {
-  margin: 25rem 0; }
-  .sectionOne .container {
-    margin-top: 15rem; }
-    .sectionOne .container .row {
-      display: flex;
-      align-items: center; }
-
-.sectionTwo .image-banner {
-  background-image: url(../images/sectionTwo/clearcut-forest.jpg); }
-
-.sectionThree {
-  margin: 25rem 0; }
-  .sectionThree h2 {
-    margin-bottom: 5rem; }
-  .sectionThree .bg-primary {
-    background-color: #ffffff !important; }
-  .sectionThree .card-body {
-    overflow-x: hidden;
-    border: none;
-    padding: 0;
-    border: #4B3F72 solid 0.1rem; }
-
-.sectionFour .image-banner {
-  background-image: url(../images/sectionFour/chopped-forest.jpg); }
-
-.sectionFive {
-  margin: 25rem 0; }
-  .sectionFive h2 {
-    margin: 3rem auto 3rem auto; }
-  .sectionFive .analogy {
-    margin: 5rem auto 2rem auto; }
-    .sectionFive .analogy span {
-      display: inline-block; }
-  .sectionFive .lead button {
-    margin-top: 3rem;
-    border-radius: 0.5rem;
-    background-color: #417B5A;
-    border: #4B3F72;
-    padding: 0.5rem 2rem; }
-    .sectionFive .lead button:hover {
-      background-color: #D0CEBA; }
-  .sectionFive .modal-content {
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-    margin-top: 20vh; }
-    @media only screen and (max-width: 30em) {
-      .sectionFive .modal-content .youtube-video {
-        width: 100%;
-        min-height: 25rem;
-        height: auto; } }
-
-.sectionSix .image-banner {
-  background-image: url(../images/sectionSix/never.jpg); }
-
-.sectionSeven {
-  margin: 25rem 0; }
-  .sectionSeven h2 {
-    margin: 3rem auto 3rem auto; }
-  .sectionSeven iframe {
-    margin: 3rem auto 3rem auto;
-    padding-left: 3rem; }
-    @media only screen and (max-width: 30em) {
-      .sectionSeven iframe {
-        padding-left: 0; } }
-  .sectionSeven p {
-    margin: 3rem auto 3rem auto; }
-  .sectionSeven #accordionExample {
-    margin-top: 5rem; }
-    .sectionSeven #accordionExample iframe {
-      float: right; }
-      @media only screen and (max-width: 30em) {
-        .sectionSeven #accordionExample iframe {
-          float: none; } }
-    .sectionSeven #accordionExample .card-header {
-      background-color: #417B5A; }
-      .sectionSeven #accordionExample .card-header button {
-        width: 100%; }
-        .sectionSeven #accordionExample .card-header button:focus {
-          outline: none;
-          box-shadow: none; }
-
-.sectionEight .image-banner {
-  background-image: url(../images/sectionEight/pray.jpg); }
-
-.sectionNine {
-  margin: 25rem 0; }
-  .sectionNine h2, .sectionNine iframe {
-    margin: 3rem auto 3rem auto; }
-
-footer {
-  background-color: #417B5A;
-  padding: 5rem;
-  border-top: solid 0.1rem #4B3F72; }
-  footer .col-md-4 {
-    margin-bottom: 3rem; }
-  footer img {
-    width: 80%; }
-    @media only screen and (max-width: 30em) {
-      footer img {
-        width: 100%; } }
-  @media only screen and (max-width: 30em) {
-    footer ul {
-      margin-bottom: 2rem; } }
-  footer ul h6 {
-    position: relative; }
-    footer ul h6:after {
-      content: '';
-      width: 45%;
-      position: absolute;
-      left: 0;
-      bottom: -0.2rem;
-      border-width: 0 0 0.2rem;
-      border-style: dashed; }
-  footer ul li {
-    list-style-type: disc;
-    padding: 0.4rem 0; }
-    footer ul li:nth-child(2) {
-      margin-top: 1.5rem; }
-      @media only screen and (max-width: 30em) {
-        footer ul li:nth-child(2) {
-          margin-top: 1rem; } }
+#nuclear .video-container {
+  -webkit-box-shadow: -1px 65px 55px -31px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 65px 55px -31px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 65px 55px -31px rgba(0, 0, 0, 0.75);
+  padding: 1rem; }
 
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
@@ -662,7 +655,12 @@ hr {
   height: 0;
   overflow: visible; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 

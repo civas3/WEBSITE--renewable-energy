@@ -8,190 +8,227 @@ https://www.internetingishard.com/html-and-css/web-typography/
 
 /* !!!!___ Use % rather than px for all layout-related lenghts (including pictures) ___!!!! */
 
-h1, h2, h3, h4, h5, h6{
-    font-family: 'IM Fell English', serif;
-    text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
 }
 
-p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 400;  
-    padding-bottom: 1rem;   
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+span {
+  font-size: 150%;
 }
 
-h2{
+.section-title{
+  h2{
+   
+    font-size: 2.2rem;
     text-align: center;
-    @include respond(b-phone) {
-        font-size: 3rem !important;
-      }
-    &:nth-child(2){
-        color: red !important;
-    }  
+    text-shadow: $primary-green 0.1rem 0.1rem;
+    
+    @include respond(tab-port) {
+      font-size: 2.6rem;
+    }
+    @include respond(medium-desktop) {
+      font-size: 3.6rem;
+    }
+   
+ 
+      
+  }
 }
 
-span{
-    font-size: 150%;
-    font-weight: bold;
-}
 
 
 //NAV
-nav{  
-    ul{
-     li{
-         a{
-             color: $white;
-             font-size: 2rem;
-             @include respond(tab-land) {
-                font-size: 1.8rem;
-              }
-             text-transform: uppercase;
-             font-weight: bold;
-             text-shadow: $black 0.1rem 0.1rem;
-             &:hover{
-                 color: $primary-pink;
-             }
-         }
-     }
-    }
+#nav {
+  .logo{
+   
+    h1{
+      font-size: 3rem !important;
+      letter-spacing: 0.2rem;
+      color: $black;
+      text-shadow: white 0.2rem 0.2rem;
+      span{
+        color: $white;
+        font-weight: bold;
+        text-shadow: none;
+        text-shadow: black 0.2rem 0.2rem;
+      }
+    }  
   }
+  .nav-link{
+    color: $white;
+    text-shadow: $black 0.1rem 0.1rem;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    &:hover{
+      text-shadow: $black 0.2rem 0.2rem;
+    }
+    @include respond(tab-land) {
+      font-size: 1.8rem;
+     }
+}
+}
 //NAV ENDS
 
-//hero-section
-.hero-section{
-    .carousel-caption{   
-        p{
-            font-size: 5rem;
-            text-transform: capitalize;
-            text-shadow: $black 0.6rem 0.6rem;
-            font-weight: bold;
-            @include respond(b-phone) {
-                font-size: 3.5rem;
-              }
-            @include respond(s-phone) {
-                font-size: 3rem;
-            }
-        }
+//HERO SECTION
+#hero {
+  
+  .carousel-caption{
+    
+    p,span{
+      font-size: 2rem;
+      text-transform: capitalize;
+      font-weight: 600;
+      text-shadow: red -0.1rem -0.1rem;
+     
+    
+
+      @include respond(tab-port) {
+        font-size: 3.2rem;
+        line-height: 6rem;
+      }
+
     }
-    .carousel-item{
-            &:nth-child(5){
-                a{
-                    font-size: 2.5rem;
-                    font-weight: bold;
-                    text-shadow: black 0.2rem 0.2rem;
-                    color: $primary-pink;
-                    @include respond(s-phone) {
-                        font-size: 2rem;
-                    }
-                }
-            }
+  }
+}
+//HERO SECTION END
+
+//INTRODUCTION
+#introduction {
+  word-spacing: 0.5rem; 
+}
+//INTRODUCTION ENDS
+
+//IMPACT
+#impact {
+  .card-title{
+      font-size: 2rem !important;
+  }
+  p{
+    padding-bottom: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+ 
+.text-muted{
+    color: black !important;
+}
+
+ 
+}
+//IMPACT ENDS
+
+//CAUSE
+#cause {
+  h3{
+    font-size: 2rem;
+  }
+  
+  span{
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 1rem;
+   // font-size: 1.6rem;
+  }
+  .section-content{
+    letter-spacing: 0.2rem;
+    span{
+      font-size: 1.6rem;
+    }
+  }
+  .modal-button{
+    font-size: 2rem !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: black 0.2rem 0.2rem;
+    letter-spacing: 0.1rem;
+    &:hover{
+      background-color: $primary-green;
+    }
+    @include respond(tab-port) {
+      font-size: 1.8rem !important;
+}
+  }
+ 
+
+  
+}
+//CAUSE ENDS
+
+//MISSION
+#mission {
+  .accordion-item{
+    
+    .accordion-button{
+      text-transform: capitalize;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+   
+    .accordion-header{
+       font-size: 2rem;
+    
+    }
+    .accordion-body{
+      letter-spacing: 0.2rem;
+      @include respond(medium-desktop) {
+        font-size: 2.2rem;
+      }
+
     }
 }
-//hero-section END
-
-//section-one
-.sectionOne{
-    .container{
-          .row{
-        word-spacing: 0.5rem;
-        span{
-            font-weight: normal;
-        }      
-    }  
-    }  
+  
 }
-//section-one ENDS
+//MISSION ENDS
 
-//section-three
-.sectionThree{
-    .container{
-          .row{  
-        word-spacing: 0.5rem;    
-    }  
-    }  
-}
-//section-three ENDS
-
-//section-five
-.sectionFive{
-    @include sectionMargin; 
-    .analogy{
-         span{
-            font-size: 210%;
-        }    
-    }
-
-    .lead{
-        text-align: center;
-          button{
-        font-size: 180%;
+//FOOTER
+footer {
+  color: $black;
+  .footer-item{
+    &--title {
+      h6{
+        font-size: 2.2rem !important;
+        color: $black;
         font-weight: bold;
-        text-transform: uppercase;
-        text-shadow: $black 0.1rem 0.1rem;    
-        &:hover{
-            color: black;
-            text-shadow: $white 0.1rem 0.1rem;
-        }
+        text-shadow: rgb(177, 170, 170) 0.1rem 0.1rem;
+        letter-spacing: 0.3rem;
+      }
     }
-    }
+    &--content {
+      a{
+       color: $white ;
+       font-size: 1.6rem;
+       line-height: 4rem;
+       @include respond(tab-port) {
+        line-height: 3rem;
+      } 
+    
 
+      }
+      i{
+        font-size: 3.5rem;
+      }
+     }
+
+  }  
+  .web-rights {
+    margin-top: 2rem;
+    text-align: center;
+    color: yellow;
+  }
 }
-//section-five ENDS
-
-//section-seven
-.sectionSeven{ 
-    .card-text{
-        text-align: center;
-    }
-
-    #accordionExample{
-        .card-header{
-               button{
-            h3{
-                color: $white !important;
-                text-shadow: black 0.1rem 0.1rem;
-                font-size: 200%;
-                letter-spacing: 0.1rem;
-                word-spacing: 0.5rem;
-                text-align: left;
-                
-            }
-        }  
-        }    
-           
-    }
-}
-//section-seven ENDS
-
-
-
-//footer
-footer{
-    color: $white;
-    ul{
-        h6{
-            font-size: 190%;
-            font-weight: bold;
-            letter-spacing: 0.2rem;
-            text-shadow: black 0.1rem 0.1rem;
-            &:after {
-                content: '';
-                color: $primary-purple;
-            }
-        }
-        li{
-            a{
-                text-decoration: none ;
-                color: $white;   
-                font-size: 150%;  
-                &:hover{
-                    color: $primary-pink;
-                    text-decoration: none;
-                }
-                
-            }
-        }
-    }
-}
-//footer ENDS
+//FOOTER ENDS

@@ -16,88 +16,23 @@
     100% {background-color:red; left:0px; top:0px;}
   }
 
-
-
-
-
-  // hero-section slide-5
-  @keyframes arrow{
-    0%{ top: 40%; }
-    25%{ top: 42.5%;}
-    50%{ top: 40%;}
-    75%{  top: 42.5%;}
-    100%{ top: 40%; }
-  }
-
-  @keyframes arrowDown-itemOne{
-    0%{opacity: 0;}
-    100%{opacity: 0.2; background-color: $primary-green; }
-  }
-
-  @keyframes arrowDown-itemTwo{
-    0%{opacity: 0; }
-    100%{opacity: 0.3; background-color: $primary-green;}
-  }
-
-  @keyframes arrowDown-itemThree{
-    0%{opacity: 0;}
-    100%{opacity: 0.4; background-color: $primary-green;}
-  }
-
-  @keyframes arrowDown-itemFour{
-    0%{opacity: 0;}
-    100%{opacity: 0.5; background-color: $primary-green; }
-  }
-
-  @keyframes arrowDown-itemFive{
-    0%{opacity: 0;}
-    100%{opacity: 0.8; border-top: 5rem solid $primary-green; }
-  }
-
-  @keyframes heroButton{
-    0%{opacity: 0;}
-    100%{opacity: 1; background-color: $primary-green;  }
-  }
-
   
 
-  //
+//ANIMATION
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 1.7s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 1.7s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
 
-  //sectionOne 
-  .sectionOne{
-    //slideIN animation
-  .come-in {
-    transform: translateY(150px);
-    animation: come-in 1s ease forwards;
-  }
-  .come-in:nth-child(odd) {
-    animation-duration: 0.8s;
-  }
-  .already-visible {
-    transform: translateY(0);
-    animation: none;
-  }
-  
-  @keyframes come-in {
-    to { transform: translateY(0); }
-  }
-
+@keyframes come-in {
+  to { transform: translateY(0); }
 }
 
 
-
-//fadeIn animation
-.hide-image{
-  visibility: hidden;
-}
-
-.fadeIn {
-  -webkit-animation: show-image 0.8s;
-  animation: show-image 0.8s;
-  visibility: visible !important;
-}
-
-@-webkit-keyframes show-image{
-  0%{opacity:0}
-  100%{opacity:1}
-}

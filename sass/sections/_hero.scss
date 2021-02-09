@@ -1,0 +1,25 @@
+//hero-section
+#hero{  
+    background-color: black;   
+    .carousel-item{
+        height: 100vh; 
+        background-color: black !important;
+    }
+    .carousel-caption{
+      bottom: 10%;
+      left: 50%;
+      line-height: 3rem;
+      width: 80vw;
+      transform: translate(-50%, -10%);
+      @include respond(medium-desktop) {
+        width: 40vw;
+        left: 10%;
+        top: 35%;
+        transform: translate(-10%, -30%);
+      }
+    
+    }
+    
+}
+
+//hero-section ENDS

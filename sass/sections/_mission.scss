@@ -1,0 +1,27 @@
+
+//SECTION MISSION
+#mission{
+    .accordion-item{
+    -webkit-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 7px 44px -22px rgba(0, 0, 0, 0.75);
+    margin-bottom: 8rem;
+        .accordion-button{
+            width: 100%;
+            padding: 5rem 1rem;
+            background-color: #e9d2c0c9;
+            border: none;
+        }
+        
+        .accordion-body{
+            padding: 0 1rem 1rem 1rem;
+            margin-bottom: 10rem;
+            p{
+                padding: 2.5rem 1.3rem;
+            }
+        }
+       
+    }
+  
+}
+//SECTION MSSION ENDS
